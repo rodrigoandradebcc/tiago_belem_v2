@@ -1,4 +1,6 @@
 TiagoBelemV2::Application.routes.draw do
+  resources :supports
+
   get "welcome/index"
   resources :movies
 

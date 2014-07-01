@@ -17,6 +17,7 @@
         <li class="<%= 'active' if params[:controller] == 'welcome' %>"><a href="/">Home</a></li>
         <li class="<%= 'active' if params[:controller] == 'bios' %>"><a href="/bios">Bio</a></li>
         <li class="<%= 'active' if params[:controller] == 'movies' %>"><a href="/movies">Movies</a></li>
+        <li class="<%= 'active' if params[:controller] == 'endorsees' %>"><a href="/endorsees">Endorsee</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
           <li class="<%= 'active' if params[:controller] == 'devise/sessions' %>"><%= link_to " Login", "#myModal", data: {toggle: "modal"} %></li>

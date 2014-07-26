@@ -13,5 +13,23 @@
  *= require_tree .
  */
 body {
- 	padding-top: 60px;
+ 	padding-top: 70px;
+ 	background: url(home.jpg) no-repeat;
+ 	background-size: 100%;
 }
+
+/*
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul a {
+    display: block;
+    width: 60px;
+}
+
+nav ul li {
+    display: inline;
+}*/

@@ -14,8 +14,9 @@
  */
 body {
  	padding-top: 70px;
- 	background: url(home.jpg) no-repeat;
- 	background-size: 100%;
+ 	background: url('home.jpg') no-repeat;
+ 	
+ 	background-size: cover;
 }
 
 /*

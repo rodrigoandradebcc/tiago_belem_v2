@@ -19,18 +19,8 @@ body {
  	background-size: cover;
 }
 
-/*
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+#backbio {
+  background: url('bio.jpg') no-repeat !important;
+  
+  background-size: cover;
 }
-
-nav ul a {
-    display: block;
-    width: 60px;
-}
-
-nav ul li {
-    display: inline;
-}*/

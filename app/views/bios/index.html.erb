@@ -1,31 +1,33 @@
-<div class="container">
-  <h1>Listing bios</h1>
+</style>
 
-<table>
-  <thead>
-    <tr>
-      <th>Content</th>
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
-  </thead>
+  <div class="container">
+    <h1>Listing bios</h1>
 
-  <tbody>
-    <% @bios.each do |bio| %>
-      <tr>
-        <td><%= bio.content %></td>
-        <td><%= link_to 'Show', bio %></td>
-        <td><%= link_to 'Edit', edit_bio_path(bio) %></td>
-        <td><%= link_to 'Destroy', bio, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+    <table>
+      <thead>
+        <tr>
+          <th>Content</th>
+          <th></th>
+          <th></th>
+          <th></th>
+        </tr>
+      </thead>
 
-<br>
+      <tbody>
+        <% @bios.each do |bio| %>
+        <tr>
+          <td><%= bio.content %></td>
+          <td><%= link_to 'Show', bio %></td>
+          <td><%= link_to 'Edit', edit_bio_path(bio) %></td>
+          <td><%= link_to 'Destroy', bio, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        </tr>
+        <% end %>
+      </tbody>
+    </table>
 
-<%= link_to 'New Bio', new_bio_path %>
+    <br>
 
-  
-</div>
+    <%= link_to 'New Bio', new_bio_path %>
+
+
+  </div>

@@ -29,3 +29,11 @@ body {
 	color: #ffffff !important;
 	text-align: justify;
 }
+
+.colocaborda {
+	border: 1px solid #ffffff;
+}
+
+.ficatransparente{
+	background-color: transparent !important;
+}

@@ -1,33 +1,27 @@
-</style>
+<div class="container">
+  <div class="col-md-12">
+    <% @bios.each do |bio| %>
+    
+    <div class="col-md-12">
+      <p class="mudatexto">BIO</p>
+      <div class="mudatexto" > <%= bio.content %></div>
+    </div>
 
-  <div class="container">
-    <h1>Listing bios</h1>
+    <div class="col-md-12">
+      <br>
+      <%= link_to 'Show', bio, :class => "btn btn-primary" %>
+      <%= link_to 'Edit', edit_bio_path(bio), :class => "btn btn-primary" %>
+      <%= link_to 'Destroy', bio, method: :delete, data: { confirm: 'Are you sure?' } , :class => "btn btn-primary"%>
+    </div>
+    <% end %>
 
-    <table>
-      <thead>
-        <tr>
-          <th>Content</th>
-          <th></th>
-          <th></th>
-          <th></th>
-        </tr>
-      </thead>
-
-      <tbody>
-        <% @bios.each do |bio| %>
-        <tr>
-          <td><%= bio.content %></td>
-          <td><%= link_to 'Show', bio %></td>
-          <td><%= link_to 'Edit', edit_bio_path(bio) %></td>
-          <td><%= link_to 'Destroy', bio, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-        </tr>
-        <% end %>
-      </tbody>
-    </table>
-
-    <br>
-
-    <%= link_to 'New Bio', new_bio_path %>
+    <% if @bios.empty? %>
+    <div class="col-md-12">
+      <br>
+      <%= link_to 'New Bio', new_bio_path, :class => "btn btn-primary" %>
+    </div>
+    <% end %>
 
 
   </div>
+</div>

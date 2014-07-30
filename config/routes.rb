@@ -1,4 +1,6 @@
 TiagoBelemV2::Application.routes.draw do
+  resources :musics
+
   resources :supports
 
   get "welcome/index"

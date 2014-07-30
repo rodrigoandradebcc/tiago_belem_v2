@@ -23,8 +23,8 @@
 				<ul class="nav navbar-nav">
 					<li class="<%= 'active' if params[:controller] == 'welcome' %>"><a href="/">HOME</a></li>
 					<li class="<%= 'active' if params[:controller] == 'bios' %>"><a href="/bios" value="changeBack()">BIO</a></li>
-					<li><a href="#">AGENDA</a></li>
-					<li><a href="#">MÚSICA</a></li>
+					<li><a href="/music">AGENDA</a></li>
+					<li class="<%= 'active' if params[:controller] == 'musics' %>"><a href="/musics">MÚSICA</a></li>
 					<li><a href="#">ENDORSEE</a></li>
 					<li><a href="#">MÍDIA</a></li>
 					<li><a href="#">CONTATO</a></li>

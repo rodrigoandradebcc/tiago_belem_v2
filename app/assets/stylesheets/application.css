@@ -24,3 +24,8 @@ body {
   
   background-size: cover;
 }
+
+.mudatexto {
+	color: #ffffff !important;
+	text-align: justify;
+}

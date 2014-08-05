@@ -28,8 +28,9 @@ class ContactsController < ApplicationController
 
     respond_to do |format|
       if @contact.save
-        format.html { redirect_to @contact, notice: 'Contact was successfully created.' }
-        format.json { render action: 'show', status: :created, location: @contact }
+        ContactMailer.contact_data(@contact).deliver!
+        ContactMailer.thanks(@contact).deliver!
+        format.html {redirect_to root_path, notice: 'Contact was successfully created.' }
       else
         format.html { render action: 'new' }
         format.json { render json: @contact.errors, status: :unprocessable_entity }

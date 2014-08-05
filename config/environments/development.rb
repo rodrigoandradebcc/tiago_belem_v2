@@ -6,8 +6,8 @@ TiagoBelemV2::Application.configure do
     port:587,
     domain:"gmail.com",
     authentication: "plain",
-    user_name:"rodrigoandradebcc@gmail.com",
-    password:"mac7272159rr951",
+    user_name:"tiagobelemsite@gmail.com",
+    password:"tiagobelempara",
     enable_starttls_auto: true
   }
 

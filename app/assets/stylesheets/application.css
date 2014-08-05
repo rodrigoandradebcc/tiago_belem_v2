@@ -12,19 +12,11 @@
  *= require font-awesome
  *= require_tree .
  */
-body {
- 	padding-top: 70px;
- 	background: url('home.jpg') no-repeat;
- 	
- 	background-size: cover;
-}
 
-#backbio {
-  background: url('bio.jpg') no-repeat !important;
-  
-  background-size: cover;
+body{
+	padding-top: 70px;
+ 	background: url('home.jpg') no-repeat fixed 100%;
 }
-
 .mudatexto {
 	color: #ffffff !important;
 	text-align: justify;

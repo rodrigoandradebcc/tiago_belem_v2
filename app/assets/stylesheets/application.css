@@ -13,19 +13,45 @@
  *= require_tree .
  */
 
-body{
-	padding-top: 70px;
- 	background: url('home.jpg') no-repeat fixed 100%;
-}
-.mudatexto {
-	color: #ffffff !important;
-	text-align: justify;
-}
+ body{
+ 	padding-top: 70px; 
+    background-size:cover;
+ }
 
-.colocaborda {
-	border: 1px solid #ffffff;
-}
+ .mudatexto {
+ 	color: #ffffff !important;
+ 	text-align: justify;
+ }
 
-.ficatransparente{
-	background-color: transparent !important;
-}
+ .colocaborda {
+ 	border: 1px solid #ffffff;
+ }
+
+ .ficatransparente{
+ 	background-color: transparent !important;
+ }
+
+ .backhome{
+ 	background: url('home.jpg') no-repeat center center fixed;
+ 	background-size:cover;
+ }
+
+ .backbio{
+ 	background: url('bio.jpg') no-repeat center center fixed;
+ 	background-size:cover;
+ }
+
+ .backcont{
+ 	background: url('contato.jpg') no-repeat center center fixed;
+ 	background-size:cover;
+ }
+
+ .backagenda{
+ 	background: url('agenda.jpg') no-repeat center center fixed;
+ 	background-size:cover;
+ }
+
+ .backmusica{
+ 	background: url('musica.jpg') no-repeat center center fixed;
+ 	background-size:cover;
+ }

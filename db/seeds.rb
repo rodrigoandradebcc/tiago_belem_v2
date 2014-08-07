@@ -15,4 +15,4 @@ Na área acadêmica, sempre se dedicou ao ensino musical, Tem formação no seu 
 
 Atualmente, acompanha a cantora Liah Soares (The Voice Brasil), atua com seu trio instrumental Toque Fino, integra a trio Andaluz ao lado de Luiz Pardal e Jacinto Kawage, é baterista do ZARABATA JAZZ BAND e atua como "Side Man", tocando, ensaiando e gravando com diversos artistas.
 
-Seu primeiro projeto solo é o disco Influências. Músicas que retratam todas as influências que o músico carrega ao longo de sua carreira. Ao seu lado músico consagrados do senário paraensee participações de artistas nacionais. O projeto, além do disco, prevê show de lançamento e circulação de workshops e shows.'}])
+Seu primeiro projeto solo é o disco Influências. Músicas que retratam todas as influências que o músico carrega ao longo de sua carreira. Ao seu lado músico consagrados do senário paraense e participações de artistas nacionais. O projeto, além do disco, prevê show de lançamento e circulação de workshops e shows.'}])

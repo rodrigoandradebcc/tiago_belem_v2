@@ -15,12 +15,12 @@
 				<a id="iconeesp" href="https://www.facebook.com/TiagoBelemOficial"><%= image_tag("Instagran.png") %></a>
 				<a href="https://www.facebook.com/TiagoBelemOficial"><%= image_tag("SoundCloud.png") %></a>
 			</div>
-			<div class=" col-md-6">
+			<div class="col-md-offset-1 col-md-6">
 				<nav class="navbar navbar-default" role="navigation">
 					<ul class="nav navbar-nav">
 						<li class="<%= 'active' if params[:controller] == 'welcome' %>" ><a href="/">HOME</a></li>
 						<li class="<%= 'active' if params[:controller] == 'bios' %>"><a href="/bios">BIO</a></li>
-						<li><a href="/musics">AGENDA</a></li>
+						<li id="fonte"><a href="/musics">AGENDA</a></li>
 						<li class="<%= 'active' if params[:controller] == 'musics' %>"><a href="/musics">MÚSICA</a></li>
 						<li><a href="#">ENDORSEE</a></li>
 						<li><a href="#">MÍDIA</a></li>
@@ -29,9 +29,9 @@
 				</nav>
 			</div>
 		</div>
-		<%= yield %>
-
-
+		<div class="content">
+			<%= yield %>
+		</div>
 	</div>
 
 </body>

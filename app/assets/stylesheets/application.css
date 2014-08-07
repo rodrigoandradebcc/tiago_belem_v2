@@ -15,7 +15,7 @@
 
  body{
  	padding-top: 70px; 
-    background-size:cover;
+ 	background-size:cover;
  }
 
  .mudatexto {
@@ -54,4 +54,32 @@
  .backmusica{
  	background: url('musica.jpg') no-repeat center center fixed;
  	background-size:cover;
+ }
+
+ .dividindo{
+ 	width: 600px;
+
+ 	margin: 0 auto;
+
+ 	border: 0px solid #FF1493;
+
+ 	padding: 10px;
+
+ 	column-count:3;
+
+ 	column-rule:1px dotted transparent;
+
+ 	-moz-column-count:3;
+
+ 	-moz-column-rule:1px dotted transparent;
+
+ 	-webkit-column-count:3;
+
+ 	-webkit-column-rule:1px dotted transparent;
+
+ 	-o-column-count:3;
+
+ 	-o-column-rule:1px dotted transparent;
+
+ 	text-align: justify;
  }

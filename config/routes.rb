@@ -1,5 +1,7 @@
 TiagoBelemV2::Application.routes.draw do
   resources :contacts
+  
+  resources :midia
 
   resources :musics
 

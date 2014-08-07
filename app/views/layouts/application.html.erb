@@ -6,33 +6,40 @@
 	<%= javascript_include_tag "application", "data-turbolinks-track" => true %>
 	<%= csrf_meta_tags %>
 </head>
-<body class="<%= ('backhome' if params[:controller] == 'welcome') || ('backbio' if params[:controller] == 'bios') || ('backcont' if params[:controller] == 'contacts') || ('backmusica' if params[:controller] == 'musics') %>
+<body class="<%= ('backhome' if params[:controller] == 'welcome') || ('backbio' if params[:controller] == 'bios') || ('backcont' if params[:controller] == 'contacts') || ('backmusica' if params[:controller] == 'musics') || ('backmidia' if params[:controller] == 'midia') %>
 	">
-	<div >	
-		<div class="row">
-			<div class="col-md-offset-2 col-md-3">
+	
+		<div class="container-navbar">
 				<a id="iconeesp" href="https://www.facebook.com/TiagoBelemOficial"><%= image_tag("facebook.png") %></a>
 				<a id="iconeesp" href="https://www.facebook.com/TiagoBelemOficial"><%= image_tag("Instagran.png") %></a>
 				<a href="https://www.facebook.com/TiagoBelemOficial"><%= image_tag("SoundCloud.png") %></a>
-			</div>
-			<div class=" col-md-6">
-				<nav class="navbar navbar-default" role="navigation">
-					<ul class="nav navbar-nav">
-						<li class="<%= 'active' if params[:controller] == 'welcome' %>" ><a href="/">HOME</a></li>
-						<li class="<%= 'active' if params[:controller] == 'bios' %>"><a href="/bios">BIO</a></li>
-						<li><a href="/musics">AGENDA</a></li>
-						<li class="<%= 'active' if params[:controller] == 'musics' %>"><a href="/musics">MÚSICA</a></li>
-						<li><a href="#">ENDORSEE</a></li>
-						<li><a href="#">MÍDIA</a></li>
-						<li class="<%= 'active' if params[:controller] == 'contacts' %>"><a href="/contacts/new">CONTATO</a></li>
-					</ul>
-				</nav>
-			</div>
-		</div>
-		<%= yield %>
+			<nav class="navbar navbar-right " role="navigation">
 
-
+					
+			<ul class="nav navbar-nav">
+				<li class="<%= 'active' if params[:controller] == 'welcome' %>" ><a href="/">HOME</a></li>
+				<li class="<%= 'active' if params[:controller] == 'bios' %>"><a href="/bios">BIO</a></li>
+				<li><a href="/musics">AGENDA</a></li>
+				<li class="<%= 'active' if params[:controller] == 'musics' %>"><a href="/musics">MÚSICA</a></li>
+				<li><a href="#">ENDORSEE</a></li>
+				<li><a href="/midia">MÍDIA</a></li>
+				<li class="<%= 'active' if params[:controller] == 'contacts' %>"><a href="/contacts/new">CONTATO</a></li>
+			</ul>
+		
+	</nav>
 	</div>
+
+
+
+	
+	
+
+
+	<%= yield %>
+
+	
+
+
 
 </body>
 </html>

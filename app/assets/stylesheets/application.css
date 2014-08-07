@@ -16,7 +16,47 @@
  body{
  	padding-top: 70px; 
     background-size:cover;
+    
  }
+.container-navbar { 
+	padding-left: 10%;
+	width: 100%; }
+.nav{
+	font-size: 13px;
+
+}
+
+.circle-container{
+	min-width: 768px;
+	padding-top: 5%;
+
+}
+
+
+.circle-content {
+  color: #28474e;
+  float: left;
+  line-height: 1;
+  margin-top: -0.2em;
+  padding-top: 50%;
+  text-align: center;
+  width: 100%;
+  font-size: 1.3em;
+}
+
+.circle-responsive {
+  background: #b5dddd; 
+  margin-left: 5em;
+  border-radius: 50%;
+  height: 0;
+  padding-bottom: 30%;
+  width: 30%;
+  border: solid #28474e 5px;
+}
+
+.circle-responsive:hover {
+  border: solid #a80f1a 5px;
+}
 
  .mudatexto {
  	color: #ffffff !important;
@@ -55,3 +95,10 @@
  	background: url('musica.jpg') no-repeat center center fixed;
  	background-size:cover;
  }
+
+ .backmidia{
+ 	background: url('midia.jpg')no-repeat center center fixed;
+ 	background-size:cover;
+ }
+
+ 

@@ -6,7 +6,7 @@
 	<%= javascript_include_tag "application", "data-turbolinks-track" => true %>
 	<%= csrf_meta_tags %>
 </head>
-<body class="<%= ('backhome' if params[:controller] == 'welcome') || ('backbio' if params[:controller] == 'bios') || ('backcont' if params[:controller] == 'contacts') || ('backmusica' if params[:controller] == 'musics') %>
+<body class="<%= ('backhome' if params[:controller] == 'welcome') || ('backbio' if params[:controller] == 'bios') || ('backcont' if params[:controller] == 'contacts') || ('backmusica' if params[:controller] == 'musics') || ('backagenda' if params[:controller] == 'events')%>
 	">
 	<div >	
 		<div class="row">
@@ -20,7 +20,7 @@
 					<ul class="nav navbar-nav">
 						<li class="<%= 'active' if params[:controller] == 'welcome' %>" ><a href="/">HOME</a></li>
 						<li class="<%= 'active' if params[:controller] == 'bios' %>"><a href="/bios">BIO</a></li>
-						<li id="fonte"><a href="/musics">AGENDA</a></li>
+						<li class="<%= 'active' if params[:controller] == 'events' %>"><a href="/events">AGENDA</a></li>
 						<li class="<%= 'active' if params[:controller] == 'musics' %>"><a href="/musics">MÚSICA</a></li>
 						<li><a href="#">ENDORSEE</a></li>
 						<li><a href="#">MÍDIA</a></li>

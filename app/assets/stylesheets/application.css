@@ -12,6 +12,9 @@
  *= require font-awesome
  *= require_tree .
  */
+html{
+	font-family: "Lucida Sans Typewriter", "Lucida Console", Monaco, "Bitstream Vera Sans Mono", monospace;
+}
 
  body{
  	padding-top: 70px; 
@@ -21,6 +24,7 @@
  .mudatexto {
  	color: #ffffff !important;
  	text-align: justify;
+ 	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
  }
 
  .colocaborda {
@@ -82,4 +86,9 @@
  	-o-column-rule:1px dotted transparent;
 
  	text-align: justify;
+ }
+
+ .tamanho{
+ 	min-height: 125px;
+ 	min-width: 75px;
  }

@@ -1,0 +1,41 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-offset-9 col-md-3">
+      <h1>Listing events</h1>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Event date</th>
+          <th>Time</th>
+          <th>Name</th>
+          <th>Place</th>
+          <th></th>
+          <th></th>
+          <th></th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <% @events.each do |event| %>
+        <tr>
+          <td><%= event.event_date %></td>
+          <td><%= event.time %></td>
+          <td><%= event.name %></td>
+          <td><%= event.place %></td>
+          <td><%= link_to 'Show', event %></td>
+          <td><%= link_to 'Edit', edit_event_path(event) %></td>
+          <td><%= link_to 'Destroy', event, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        </tr>
+        <% end %>
+      </tbody>
+    </table>
+
+    <br>
+
+    <%= link_to 'New Event', new_event_path %>
+  
+    </div>
+    
+  </div>
+</div>

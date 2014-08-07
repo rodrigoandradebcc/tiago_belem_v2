@@ -1,21 +1,27 @@
-<%= form_for(@music) do |f| %>
-  <% if @music.errors.any? %>
+<div class="container">
+  <div class="row">
+    <%= form_for(@music) do |f| %>
+    <% if @music.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@music.errors.count, "error") %> prohibited this music from being saved:</h2>
 
       <ul>
-      <% @music.errors.full_messages.each do |msg| %>
+        <% @music.errors.full_messages.each do |msg| %>
         <li><%= msg %></li>
-      <% end %>
+        <% end %>
       </ul>
     </div>
-  <% end %>
+    <% end %>
 
-  <div class="field">
-    <%= f.label :link %><br>
-    <%= f.text_area :link %>
+    <div class="field">
+    <%= f.label :link, class: "mudatexto" %><br>
+      <%= f.text_area :link, placeholder: "Cole o link do soundcloud aqui" %>
+    </div>
+    <div class="actions">
+      <br>
+      <%= f.submit class: "btn btn-primary" %>
+    </div>
+    <% end %>
+
   </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
-<% end %>
+</div>

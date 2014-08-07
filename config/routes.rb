@@ -1,4 +1,6 @@
 TiagoBelemV2::Application.routes.draw do
+  resources :events
+
   resources :contacts
   
   resources :midia

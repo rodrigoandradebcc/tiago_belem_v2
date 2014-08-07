@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140730150108) do
+ActiveRecord::Schema.define(version: 20140807182646) do
 
   create_table "bios", force: true do |t|
     t.text     "content"
@@ -29,6 +29,15 @@ ActiveRecord::Schema.define(version: 20140730150108) do
 
   create_table "endorsees", force: true do |t|
     t.string   "link"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "events", force: true do |t|
+    t.date     "event_date"
+    t.datetime "time"
+    t.string   "name"
+    t.string   "place"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

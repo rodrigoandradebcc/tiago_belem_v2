@@ -12,11 +12,16 @@
  *= require font-awesome
  *= require_tree .
  */
+html{
+	font-family: "Lucida Sans Typewriter", "Lucida Console", Monaco, "Bitstream Vera Sans Mono", monospace;
+}
 
  body{
  	padding-top: 70px; 
+
     background-size:cover;
     
+
  }
 .container-navbar { 
 	padding-left: 10%;
@@ -61,6 +66,7 @@
  .mudatexto {
  	color: #ffffff !important;
  	text-align: justify;
+ 	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
  }
 
  .colocaborda {
@@ -96,9 +102,42 @@
  	background-size:cover;
  }
 
+
  .backmidia{
  	background: url('midia.jpg')no-repeat center center fixed;
  	background-size:cover;
  }
 
- 
+
+ .dividindo{
+ 	width: 600px;
+
+ 	margin: 0 auto;
+
+ 	border: 0px solid #FF1493;
+
+ 	padding: 10px;
+
+ 	column-count: 3;
+
+ 	column-rule:1px dotted transparent;
+
+ 	-moz-column-count:3;
+
+ 	-moz-column-rule:1px dotted transparent;
+
+ 	-webkit-column-count:3;
+
+ 	-webkit-column-rule:1px dotted transparent;
+
+ 	-o-column-count:3;
+
+ 	-o-column-rule: 1px dotted transparent;
+
+ 	text-align: justify;
+ }
+
+ .tamanho{
+ 	min-height: 125px;
+ 	min-width: 75px;
+ }

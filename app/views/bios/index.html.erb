@@ -2,9 +2,9 @@
   <div class="col-md-12">
     <% @bios.each do |bio| %>
     
-    <div class="col-md-12">
-      <p class="mudatexto">BIO</p>
-      <div class="mudatexto" > <%= bio.content %></div>
+    <div class="col-md-12 dividindo">
+      <p class="mudatexto"><strong>BIO</strong></p>
+      <div class="mudatexto" > <%= raw bio.content %></div>
     </div>
 
     <div class="col-md-12">

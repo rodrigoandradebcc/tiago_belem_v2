@@ -1,14 +1,14 @@
 <div class="container">
   <div class="row">
-
     <% @musics.each do |music| %>
     <tr class="col-md-3"  >
       <object height="18" width="100%"><td><%= raw (music.link)%></td></object>
-      <td><%= link_to 'Show', music, :height => "42", :width => "20" %></td>
-      <td><%= link_to 'Edit', edit_music_path(music) %></td>
-      <td><%= link_to 'Destroy', music, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      <td><%= link_to 'Show', music, :height => "42", :width => "20", class: "btn btn-primary" %></td>
+      <td><%= link_to 'Edit', edit_music_path(music), class: "btn btn-primary" %></td>
+      <td><%= link_to 'Destroy', music, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-primary" %></td>
     </tr>
     <% end %>
+    <br>
     <br>
 
     <%= link_to 'New Music', new_music_path, class: "btn btn-primary" %>

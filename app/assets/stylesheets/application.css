@@ -12,89 +12,138 @@
  *= require font-awesome
  *= require_tree .
  */
-html{
-	font-family: "Lucida Sans Typewriter", "Lucida Console", Monaco, "Bitstream Vera Sans Mono", monospace;
-}
+ html{
+   font-family: "Lucida Sans Typewriter", "Lucida Console", Monaco, "Bitstream Vera Sans Mono", monospace;
+ }
 
  body{
  	padding-top: 70px; 
- 	background-size:cover;
+
+  background-size:cover;
+  
+
+}
+.container-navbar { 
+	padding-left: 10%;
+	width: 100%; }
+  .nav{
+   font-size: 13px;
+
  }
 
- .mudatexto {
- 	color: #ffffff !important;
- 	text-align: justify;
- 	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+ .circle-container{
+   min-width: 768px;
+   padding-top: 5%;
+
  }
 
- .mudatexto {
- 	color: rgb(181,222,222) !important;
- 	text-align: justify;
- 	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
- }
 
- .colocaborda {
- 	border: 1px solid #ffffff;
- }
+ .circle-content {
+  color: #28474e;
+  float: left;
+  line-height: 1;
+  margin-top: -0.2em;
+  padding-top: 50%;
+  text-align: center;
+  width: 100%;
+  font-size: 1.3em;
+}
 
- .ficatransparente{
- 	background-color: transparent !important;
- }
+.circle-responsive {
+  background: #b5dddd; 
+  margin-left: 5em;
+  border-radius: 50%;
+  height: 0;
+  padding-bottom: 30%;
+  width: 30%;
+  border: solid #28474e 5px;
+}
 
- .backhome{
- 	background: url('home.jpg') no-repeat center center fixed;
- 	background-size:cover;
- }
+.circle-responsive:hover {
+  border: solid #a80f1a 5px;
+}
 
- .backbio{
- 	background: url('bio.jpg') no-repeat center center fixed;
- 	background-size:cover;
- }
+.mudatexto {
+  color: #ffffff !important;
+  text-align: justify;
+  font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+}
 
- .backcont{
- 	background: url('contato.jpg') no-repeat center center fixed;
- 	background-size:cover;
- }
+.mudatexto {
+  color: rgb(181,222,222) !important;
+  text-align: justify;
+  font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+}
 
- .backagenda{
- 	background: url('agenda.jpg') no-repeat center center fixed;
- 	background-size:cover;
- }
+.colocaborda {
+  border: 1px solid #ffffff;
+}
 
- .backmusica{
- 	background: url('musica.jpg') no-repeat center center fixed;
- 	background-size:cover;
- }
+.ficatransparente{
+  background-color: transparent !important;
+}
 
- .dividindo{
- 	width: 600px;
+.backhome{
+  background: url('home.jpg') no-repeat center center fixed;
+  background-size:cover;
+}
 
- 	margin: 0 auto;
+.backbio{
+  background: url('bio.jpg') no-repeat center center fixed;
+  background-size:cover;
+}
 
- 	border: 0px solid #FF1493;
+.backcont{
+  background: url('contato.jpg') no-repeat center center fixed;
+  background-size:cover;
+}
 
- 	padding: 10px;
+.backagenda{
+  background: url('agenda.jpg') no-repeat center center fixed;
+  background-size:cover;
+}
 
- 	column-count:3;
+.backmusica{
+  background: url('musica.jpg') no-repeat center center fixed;
+  background-size:cover;
+}
 
- 	column-rule:1px dotted transparent;
 
- 	-moz-column-count:3;
+.backmidia{
+  background: url('midia.jpg')no-repeat center center fixed;
+  background-size:cover;
+}
 
- 	-moz-column-rule:1px dotted transparent;
 
- 	-webkit-column-count:3;
+.dividindo{
+  width: 600px;
 
- 	-webkit-column-rule:1px dotted transparent;
+  margin: 0 auto;
 
- 	-o-column-count:3;
+  border: 0px solid #FF1493;
 
- 	-o-column-rule:1px dotted transparent;
+  padding: 10px;
 
- 	text-align: justify;
- }
+  column-count: 3;
 
- .tamanho{
- 	min-height: 125px;
- 	min-width: 75px;
- }
+  column-rule:1px dotted transparent;
+
+  -moz-column-count:3;
+
+  -moz-column-rule:1px dotted transparent;
+
+  -webkit-column-count:3;
+
+  -webkit-column-rule:1px dotted transparent;
+
+  -o-column-count:3;
+
+  -o-column-rule: 1px dotted transparent;
+
+  text-align: justify;
+}
+
+.tamanho{
+  min-height: 125px;
+  min-width: 75px;
+}

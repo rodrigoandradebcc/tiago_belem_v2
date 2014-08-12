@@ -32,7 +32,9 @@ group :doc do
   gem 'sdoc', require: false
 end
 
-gem 'better_errors'
+gem 'bootstrap-addons-rails'
+gem "rmagick"
+gem "carrierwave"
 gem 'simple_form'
 gem 'bootstrap-sass'
 gem 'devise'

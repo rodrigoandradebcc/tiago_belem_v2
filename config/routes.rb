@@ -1,4 +1,8 @@
 TiagoBelemV2::Application.routes.draw do
+  resources :galleries
+
+  resources :photos
+
   resources :events
 
   resources :contacts

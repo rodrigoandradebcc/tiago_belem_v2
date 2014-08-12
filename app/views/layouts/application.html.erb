@@ -7,7 +7,7 @@
 	<%= csrf_meta_tags %>
 </head>
 
-<body class="<%= ('backhome' if params[:controller] == 'welcome') || ('backbio' if params[:controller] == 'bios') || ('backcont' if params[:controller] == 'contacts') || ('backmusica' if params[:controller] == 'musics') || ('backmidia' if params[:controller] == 'midia') %>">
+<body class="<%= ('backhome' if params[:controller] == 'welcome') || ('backbio' if params[:controller] == 'bios') || ('backcont' if params[:controller] == 'contacts') || ('backmusica' if params[:controller] == 'musics') || ('backmidia' if params[:controller] == 'midia') || ('backmidia' if params[:controller] == 'galleries')%>">
 
 	
 	<div class="container-navbar">
@@ -38,8 +38,6 @@
 	</div>
 
 </div>
-
-
 
 
 

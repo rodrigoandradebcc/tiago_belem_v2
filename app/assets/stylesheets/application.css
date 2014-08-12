@@ -12,33 +12,43 @@
  *= require font-awesome
  *= require_tree .
  */
-html{
-	font-family: "Lucida Sans Typewriter", "Lucida Console", Monaco, "Bitstream Vera Sans Mono", monospace;
-}
+ html{
+   font-family: "Lucida Sans Typewriter", "Lucida Console", Monaco, "Bitstream Vera Sans Mono", monospace;
+ }
 
  body{
  	padding-top: 70px; 
-
-    background-size:cover;
-    
-
- }
+  background-size:cover;
+}
 .container-navbar { 
 	padding-left: 10%;
-	width: 100%; }
-.nav{
-	font-size: 13px;
-
+	width: 100%;
 }
 
+.nav a{
+ color: rgb(181,222,222);
+ outline: none;
+ display: inline-block;
+ font-weight: 700;
+ text-transform: uppercase;
+ font-size: 0.8em;
+ letter-spacing: 1px;
+ padding: 0.4em 0.9em;
+ -webkit-transition: all 0.2s;
+ transition: all 0.2s;
+}
+
+
 .circle-container{
-	min-width: 768px;
-	padding-top: 5%;
+
+ min-width: 768px;
+ padding-top: 5%;
 
 }
 
 
 .circle-content {
+
   color: #28474e;
   float: left;
   line-height: 1;
@@ -48,6 +58,21 @@ html{
   width: 100%;
   font-size: 1.3em;
 }
+
+.circle-content a{
+color: #28474e;
+  outline: none;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 1em;
+  letter-spacing: 1px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+
 
 .circle-responsive {
   background: #b5dddd; 
@@ -63,81 +88,82 @@ html{
   border: solid #a80f1a 5px;
 }
 
- .mudatexto {
- 	color: #ffffff !important;
- 	text-align: justify;
- 	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
- }
+.mudatexto {
+  color: #ffffff !important;
+  text-align: justify;
+  font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+}
 
- .colocaborda {
- 	border: 1px solid #ffffff;
- }
+.colocaborda {
+  border: 1px solid #ffffff;
+}
 
- .ficatransparente{
- 	background-color: transparent !important;
- }
+.ficatransparente{
+  background-color: transparent !important;
+}
 
- .backhome{
- 	background: url('home.jpg') no-repeat center center fixed;
- 	background-size:cover;
- }
+.backhome{
+  background: url('home.jpg') no-repeat center center fixed;
+  background-size:cover;
+}
 
- .backbio{
- 	background: url('bio.jpg') no-repeat center center fixed;
- 	background-size:cover;
- }
+.backbio{
+  background: url('bio.jpg') no-repeat center center fixed;
+  background-size:cover;
+}
 
- .backcont{
- 	background: url('contato.jpg') no-repeat center center fixed;
- 	background-size:cover;
- }
+.backcont{
+  background: url('contato.jpg') no-repeat center center fixed;
+  background-size:cover;
+}
 
- .backagenda{
- 	background: url('agenda.jpg') no-repeat center center fixed;
- 	background-size:cover;
- }
+.backagenda{
+  background: url('agenda.jpg') no-repeat center center fixed;
+  background-size:cover;
+}
 
- .backmusica{
- 	background: url('musica.jpg') no-repeat center center fixed;
- 	background-size:cover;
- }
-
-
- .backmidia{
- 	background: url('midia.jpg')no-repeat center center fixed;
- 	background-size:cover;
- }
+.backmusica{
+  background: url('musica.jpg') no-repeat center center fixed;
+  background-size:cover;
+}
 
 
- .dividindo{
- 	width: 600px;
+.backmidia{
+  background: url('midia.jpg')no-repeat center center fixed;
+  background-size:cover;
+}
 
- 	margin: 0 auto;
 
- 	border: 0px solid #FF1493;
 
- 	padding: 10px;
+.dividindo{
+  width: 600px;
 
- 	column-count: 3;
+  margin: 0 auto;
 
- 	column-rule:1px dotted transparent;
+  border: 0px solid #FF1493;
 
- 	-moz-column-count:3;
+  padding: 10px;
 
- 	-moz-column-rule:1px dotted transparent;
+  column-count: 3;
 
- 	-webkit-column-count:3;
+  column-rule:1px dotted transparent;
 
- 	-webkit-column-rule:1px dotted transparent;
+  -moz-column-count:3;
 
- 	-o-column-count:3;
+  -moz-column-rule:1px dotted transparent;
 
- 	-o-column-rule: 1px dotted transparent;
+  -webkit-column-count:3;
 
- 	text-align: justify;
- }
+  -webkit-column-rule:1px dotted transparent;
 
- .tamanho{
- 	min-height: 125px;
- 	min-width: 75px;
- }
+  -o-column-count:3;
+
+  -o-column-rule: 1px dotted transparent;
+
+  text-align: justify;
+}
+
+.tamanho{
+  min-height: 125px;
+  min-width: 75px;
+}

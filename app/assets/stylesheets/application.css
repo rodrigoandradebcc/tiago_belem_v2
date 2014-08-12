@@ -43,7 +43,7 @@
 
  min-width: 768px;
  padding-top: 5%;
-
+text-align: center;
 }
 
 
@@ -55,7 +55,9 @@
 
 
 .circle-content a{
-color: #28474e;
+  text-align: center;
+  padding-top: 45%;
+  color: #28474e;
   outline: none;
   display: inline-block;
   text-decoration: none;
@@ -170,4 +172,3 @@ color: #28474e;
   -o-column-rule: 1px dotted transparent;
   text-align: justify;
 }
-

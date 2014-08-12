@@ -32,7 +32,6 @@ group :doc do
   gem 'sdoc', require: false
 end
 
-gem 'bootstrap-addons-rails'
 gem "rmagick"
 gem "carrierwave"
 gem 'simple_form'

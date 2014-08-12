@@ -14,22 +14,20 @@
     <% end %>
 
     <div class="field">
-      <%= f.label :name, :class => "mudatexto" %><br>
-      <%= f.text_field :name, :class => "ficatransparente colocaborda", :size => "64x5" %>
+      <%= f.text_field :name, :class => "ficatransparente colocaborda mudatexto", placeholder: "NOME", :size => 80 %>
     </div>
+    <br>
     <div class="field">
-      <%= f.label :email, :class => "mudatexto" %><br>
-      <%= f.text_field :email, :class => "ficatransparente colocaborda", :size => "64x5" %>
+      <%= f.text_field :email, :class => "ficatransparente colocaborda mudatexto", placeholder: "EMAIL", :size => 80 %>
     </div>
+    <br>
     <div class="field">
-      <%= f.label :message, :class => "mudatexto" %><br>
-      <%= f.text_area :message, :size => "63x6", :class => "ficatransparente colocaborda" %>
+      <%= f.text_area :message, :class => "ficatransparente colocaborda mudatexto", placeholder: "MENSAGEM", :rows => 8, :cols => 63 %>
     </div>
     <br>
     <div class="actions">
-      <%= f.submit :class => "btn btn-primary col-md-6"%>
+      <%= f.submit :class => "btn btn-primary"%>
     </div>
     <% end %>
-
   </div>
 </div>

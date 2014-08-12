@@ -47,17 +47,12 @@
 }
 
 
-.circle-content {
+.container-navbar { 
+	padding-left: 10%;
+	width: 100%; }
 
-  color: #28474e;
-  float: left;
-  line-height: 1;
-  margin-top: -0.2em;
-  padding-top: 50%;
-  text-align: center;
-  width: 100%;
-  font-size: 1.3em;
-}
+
+
 
 .circle-content a{
 color: #28474e;
@@ -88,8 +83,32 @@ color: #28474e;
   border: solid #a80f1a 5px;
 }
 
+
 .mudatexto {
   color: #ffffff !important;
+  text-align: justify;
+  font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+}
+
+
+
+.ficatransparente{
+  background-color: transparent !important;
+}
+
+
+}
+.container-navbar { 
+	padding-left: 10%;
+	width: 100%; }
+  .nav{
+   font-size: 13px;
+
+ }
+
+
+.mudatexto2 {
+  color: rgb(181,222,222) !important;
   text-align: justify;
   font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
 }
@@ -98,9 +117,12 @@ color: #28474e;
   border: 1px solid #ffffff;
 }
 
-.ficatransparente{
-  background-color: transparent !important;
+
+.backmidia{
+  background: url('midia.jpg')no-repeat center center fixed;
+  background-size:cover;
 }
+
 
 .backhome{
   background: url('home.jpg') no-repeat center center fixed;
@@ -127,43 +149,25 @@ color: #28474e;
   background-size:cover;
 }
 
-
 .backmidia{
   background: url('midia.jpg')no-repeat center center fixed;
   background-size:cover;
 }
 
-
-
 .dividindo{
   width: 600px;
-
   margin: 0 auto;
-
   border: 0px solid #FF1493;
-
   padding: 10px;
-
-  column-count: 3;
-
-  column-rule:1px dotted transparent;
-
-  -moz-column-count:3;
-
-  -moz-column-rule:1px dotted transparent;
-
-  -webkit-column-count:3;
-
-  -webkit-column-rule:1px dotted transparent;
-
-  -o-column-count:3;
-
   -o-column-rule: 1px dotted transparent;
-
+  column-count: 3;
+  column-rule:1px dotted transparent;
+  -moz-column-count:3;
+  -moz-column-rule:1px dotted transparent;
+  -webkit-column-count:3;
+  -webkit-column-rule:1px dotted transparent;
+  -o-column-count:3;
+  -o-column-rule: 1px dotted transparent;
   text-align: justify;
 }
 
-.tamanho{
-  min-height: 125px;
-  min-width: 75px;
-}

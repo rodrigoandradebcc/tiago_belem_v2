@@ -14,7 +14,6 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require bootstrap
-//= require touchTouch.jquery
 //= require_tree .
 //= require gallery/responsive
 //= require gallery/slideshow
@@ -25,8 +24,6 @@
 //= require jquery/jquery.easing-1.3
 //= require jquery/jquery.elastislide
 //= require jquery/jquery.tmpl.min
-
-
 
 if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
   var msViewportStyle = document.createElement('style')

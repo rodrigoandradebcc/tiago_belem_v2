@@ -64,7 +64,7 @@
       background: #b5dddd; 
       margin-left: 5em;
       border-radius: 50%;
-      height: 0;
+      height: 0px;
       padding-bottom: 30%;
       width: 30%;
       border: solid #28474e 5px;
@@ -95,7 +95,7 @@
       background: #b5dddd; 
       margin-left: 5em;
       border-radius: 5%;
-      height: 0;
+      height: 10px;
       padding-bottom: 30%;
       width: 30%;
       border: solid #28474e 5px;

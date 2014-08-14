@@ -1,27 +1,19 @@
-<h1>Listing endorsees</h1>
 
-<table>
-  <thead>
-    <tr>
-      <th>Link</th>
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
-  </thead>
+<div class="container-fixed">
 
-  <tbody>
-    <% @endorsees.each do |endorsee| %>
-      <tr>
-        <td><%= endorsee.link %></td>
-        <td><%= link_to 'Show', endorsee %></td>
-        <td><%= link_to 'Edit', edit_endorsee_path(endorsee) %></td>
-        <td><%= link_to 'Destroy', endorsee, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+  <div class="row row-centered">
 
-<br>
+    <center>
+      <% @endorsees.each do |endorsee| %>
 
-<%= link_to 'New Endorsee', new_endorsee_path %>
+      <a href="<%= endorsee.link %>"><%= image_tag endorsee.image_url(:thumb).to_s, class: "col-md-4" %></a>
+
+
+      <% end %>
+
+    </center>
+
+  </div>
+  <br>
+  <%= link_to 'New Endorsee', new_endorsee_path, class: "btn btn-primary" %>
+</div>

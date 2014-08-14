@@ -53,6 +53,7 @@ class GalleriesController < ApplicationController
 
   # DELETE /galleries/1
   # DELETE /galleries/1.json
+    
   def destroy
     @gallery.destroy
     respond_to do |format|

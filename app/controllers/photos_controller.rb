@@ -1,5 +1,5 @@
 class PhotosController < ApplicationController
-  before_action :set_photo, only: [:edit, :update, :destroy]
+  before_action :set_photo, only: [:edit, :update, :destroy, :show]
 
   # GET /photos
   # GET /photos.json
@@ -14,6 +14,11 @@ class PhotosController < ApplicationController
     
   end
 
+  def show
+    
+  end
+ 
+
   # POST /photos
   # POST /photos.json
   def create
@@ -22,7 +27,7 @@ class PhotosController < ApplicationController
     respond_to do |format|
       if @photo.save
         format.html { redirect_to @photo.gallery, notice: 'Photo was successfully created.' }
-        format.json { render action: 'show', status: :created, location: @gallery }
+        format.json { render action: 'show', status: :created, location: @photo }
       else
         format.html { render action: 'new' }
         format.json { render json: @photo.errors, status: :unprocessable_entity }
@@ -62,6 +67,6 @@ class PhotosController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def photo_params
-      params.require(:photo).permit(:name, :image, :gallery_id, :remote_image_url, gallery_attributes: [:id, :name])
+      params.require(:photo).permit(:name, :image, :gallery_id, :remote_image_url, galleries_attributes: [:id, :name,:_destroy])
     end
 end

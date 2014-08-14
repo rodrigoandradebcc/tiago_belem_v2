@@ -31,7 +31,7 @@ group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
 end
-
+gem 'rails-gallery'
 gem "rmagick"
 gem "carrierwave"
 gem 'simple_form'

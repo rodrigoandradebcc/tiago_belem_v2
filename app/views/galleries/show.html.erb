@@ -9,11 +9,11 @@
   <% for photo in @gallery.photos %>
     <div class="photos">
       <%= image_tag photo.image_url(:thumb).to_s if photo.image? %>
-      <div class="name"><%= photo.name %></div>
-      <div class="actions">
+      <div class="name"><a href="photos/1.jpg" data-gallery="hongkong" title="Lion Rock"><%= photo.name %></a></div>
+     
         <%= link_to "edit", edit_photo_path(photo) %> |
-        <%= link_to "remove", photo, :confirm => 'Are you sure?', :method => :delete %>
-      </div>
+        <%= link_to "remove", photo, :method => :delete, data: {:confirm => 'Are you sure?'} %>
+      
     </div>
   <% end %>
   <div class="clear"></div>

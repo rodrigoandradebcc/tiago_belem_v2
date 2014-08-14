@@ -29,6 +29,7 @@ ActiveRecord::Schema.define(version: 20140811133023) do
 
   create_table "endorsees", force: true do |t|
     t.string   "link"
+    t.string   "image"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

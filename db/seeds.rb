@@ -22,3 +22,9 @@ Atualmente, acompanha a cantora Liah Soares (The Voice Brasil), atua com seu tri
 <br>
 <br>
 Seu primeiro projeto solo é o disco Influências. Músicas que retratam todas as influências que o músico carrega ao longo de sua carreira. Ao seu lado músico consagrados do senário paraense e participações de artistas nacionais. O projeto, além do disco, prevê show de lançamento e circulação de workshops e shows.'}])
+
+musica1 = Music.create([{link: '<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/150745932&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>'}])
+
+musica2 = Music.create([{link: '<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/150745932&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>'}])
+
+musica3 = Music.create([{link: '<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/150745932&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>'}])

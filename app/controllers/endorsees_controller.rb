@@ -69,6 +69,6 @@ class EndorseesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def endorsee_params
-      params.require(:endorsee).permit(:link)
+      params.require(:endorsee).permit(:link, :image)
     end
 end

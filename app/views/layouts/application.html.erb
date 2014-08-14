@@ -21,7 +21,7 @@
 </head>
 
 
-<body class="<%= ('backhome' if params[:controller] == 'welcome') || ('backbio' if params[:controller] == 'bios') || ('backcont' if params[:controller] == 'contacts') || ('backmusica' if params[:controller] == 'musics') || ('backmidia' if params[:controller] == 'midia') || ('backmidia' if params[:controller] == 'galleries') || ('backagenda' if params[:controller] == 'events') || ('backmidia' if params[:controller] == 'photos')%>">
+<body class="<%= ('backhome' if params[:controller] == 'welcome') || ('backbio' if params[:controller] == 'bios') || ('backcont' if params[:controller] == 'contacts') || ('backmusica' if params[:controller] == 'musics') || ('backmidia' if params[:controller] == 'midia') || ('backmidia' if params[:controller] == 'galleries') || ('backagenda' if params[:controller] == 'events') || ('backmidia' if params[:controller] == 'photos') || ('backend' if params[:controller] == 'endorsees')%>">
 
 
 
@@ -39,7 +39,7 @@
 				<li class="<%= 'active' if params[:controller] == 'bios' %>"><a href="/bios">BIO</a></li>
 				<li class="<%= 'active' if params[:controller] == 'events' %>"><a href="/events">AGENDA</a></li>
 				<li class="<%= 'active' if params[:controller] == 'musics' %>"><a href="/musics">MÚSICA</a></li>
-				<li><a href="#">ENDORSEE</a></li>
+				<li class="<%= 'active' if params[:controller] == 'endorsees' %>"><a href="/endorsees">ENDORSEE</a></li>
 				<li><a href="/midia">MÍDIA</a></li>
 				<li class="<%= 'active' if params[:controller] == 'contacts' %>"><a href="/contacts/new">CONTATO</a></li>
 			</ul>
@@ -50,6 +50,9 @@
 	
 	
 	<div class="content">
+		<br>
+		<br>
+		<br>
 		<%= yield %>
 	</div>
 

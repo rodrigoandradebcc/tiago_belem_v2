@@ -11,6 +11,7 @@
  *= require_self
  *= require font-awesome
  *= touchTouch
+ *= require fancybox
  *= require_tree .
 
  *= require gallery/responsive/elastislide

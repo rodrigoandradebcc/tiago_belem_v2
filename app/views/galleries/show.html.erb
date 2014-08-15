@@ -9,9 +9,9 @@
 <div id="photos">
   <% for photo in @gallery.photos %>
     <div class="photos">
-     <%= link_to (image_tag (photo.image_url(:thumb).to_s )),photo_path%>
-      <div class="name"><%= photo.name %></div>
      
+      <div class="name"><%= photo.name %></div>
+     <%= link_to (image_tag (photo.image_url(:thumb).to_s )), photo.image_url, { :class => "grouped_elements", :rel => "zomg_awesome_images" } %> |
         <%= link_to "edit", edit_photo_path(photo) %> |
         <%= link_to "remove", photo, :method => :delete, data: {:confirm => 'Are you sure?'} %>
       

@@ -12,14 +12,17 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :link %><br>
-    <%= f.text_field :link %>
+    <%= f.label :link, class:"mudatexto" %><br>
+    <%= f.text_field :link, placeholder: "Cole o link aqui" %>
+    <br>
+    <br>
   </div>
   <div class="field">
-    <%= f.label :image %><br>
-    <%= f.file_field :image %>
+    <%= f.label :image, class:"mudatexto" %><br>
+    <%= f.file_field :image, :class => "mudatexto" %>
   </div>
   <div class="actions">
-    <%= f.submit %>
+    <br>
+    <%= f.submit class:"btn btn-primary"%>
   </div>
 <% end %>

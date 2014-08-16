@@ -32,7 +32,7 @@ group :doc do
   gem 'sdoc', require: false
 end
 
-gem 'fancybox-rails'
+gem 'fancybox2-rails'
 gem 'rails-gallery'
 gem "rmagick"
 gem "carrierwave"

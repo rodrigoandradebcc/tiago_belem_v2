@@ -1,9 +1,19 @@
-<p id="notice"><%= notice %></p>
+<div class="container">
+	<p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Link:</strong>
+  <strong class= "mudatexto">Link:</strong>
   <%= @endorsee.link %>
 </p>
 
-<%= link_to 'Edit', edit_endorsee_path(@endorsee) %> |
-<%= link_to 'Back', endorsees_path %>
+<p>
+	<strong class= "mudatexto">Imagem:</strong>
+	<%= image_tag @endorsee.image_url(:thumb).to_s , {class: "img-responsive",style: "height: 200px;" } %>
+</p>
+
+<div class="btn-group">
+	<%= link_to 'Editar', edit_endorsee_path(@endorsee), class: "btn btn-primary" %>
+<%= link_to 'Voltar', endorsees_path, class: "btn btn-primary" %>
+
+</div>
+</div>

@@ -8,9 +8,11 @@
 					<%= image_tag endorsee.image_url(:thumb).to_s , {class: "img-responsive",style: "height: 200px;" } %>
 				</a>
 				<br>
-				<%= link_to 'Exibir', endorsee, :class => "btn-xs btn-success" , role: "button"%>
-				<%= link_to 'Editar', edit_endorsee_path(endorsee), :class => "btn-xs btn-default", role: "button"  %>
-				<%= link_to 'Deletar', endorsee, method: :delete, data: { confirm: 'Você tem certeza?'}, :class => "btn-xs btn-danger" , role: "button"%>
+				<div class="btn-group">
+					<%= link_to 'Exibir', endorsee, :class => "btn btn-primary" , role: "button" %>
+					<%= link_to 'Editar', edit_endorsee_path(endorsee), :class => "btn btn-primary", role: "button"  %>
+					<%= link_to 'Deletar', endorsee, method: :delete, data: { confirm: 'Você tem certeza?'}, :class => "btn btn-primary" , role: "button"%>
+				</div>
 			</div>
 
 		</div>

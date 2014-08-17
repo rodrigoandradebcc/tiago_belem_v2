@@ -32,6 +32,9 @@ group :doc do
   gem 'sdoc', require: false
 end
 
+gem 'activeadmin', github: 'gregbell/active_admin'
+
+gem 'kaminari'
 gem 'fancybox2-rails'
 gem 'rails-gallery'
 gem "rmagick"
@@ -40,7 +43,7 @@ gem 'simple_form'
 gem 'bootstrap-sass'
 gem 'devise'
 gem 'better_errors'
-gem 'will_paginate-bootstrap'
+
 gem 'font-awesome-sass'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'

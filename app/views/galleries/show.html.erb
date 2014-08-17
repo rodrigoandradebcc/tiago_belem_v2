@@ -7,18 +7,17 @@
   <div class="main">        
     <ul id="og-grid" class="og-grid">
 
-
-
       <% for photo in @gallery.photos %>
-
-
       <li>
-        <a>
-          <%= link_to (image_tag (photo.image_url(:thumb).to_s )), photo.image_url, { class: "grouped_elements", :rel => "zomg_awesome_images" } %>
-          <div class="name"><%= photo.name %></div>
-          <%= link_to "edit", edit_photo_path(photo) %>
-          <%= link_to "remove", photo, :method => :delete, data: {:confirm => 'Are you sure?'} %>
-        </a>
+
+         <%= link_to "", edit_photo_path(photo), :class => "btn-xs btn-primary glyphicon glyphicon-pencil" , role: "button"  %>
+         
+      <%= link_to "", photo, :method => :delete, data: {:confirm => 'Are you sure?'}, :class => "btn-xs btn-primary glyphicon glyphicon-remove" , role: "button"  %>
+        
+        <%= link_to (image_tag (photo.image_url(:thumb).to_s )), photo.image_url, { class: "grouped_elements", :rel => "zomg_awesome_images"} %>
+
+       
+
       </li>
       <% end %>
     </ul>

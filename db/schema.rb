@@ -11,7 +11,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 20140818222134) do
+=======
+ActiveRecord::Schema.define(version: 20140818141639) do
+>>>>>>> cd5dd9fc7ccb150fb5e2efeb83acb64521e1ee6c
 
   create_table "active_admin_comments", force: true do |t|
     t.string   "namespace"
@@ -74,6 +78,7 @@ ActiveRecord::Schema.define(version: 20140818222134) do
     t.string   "place"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "more_information"
   end
 
   create_table "galleries", force: true do |t|

@@ -1,41 +1,37 @@
 <div class="container">
   <div class="row">
-    <div class="col-md-offset-9 col-md-3">
-      <h1>Listing events</h1>
+    <div class="col-md-offset-7 col-md-5">
+      <% @events.each do |event| %>
+      
+      <strong>
+        <p class="deixarosa"><%= event_dateform (event.event_date) %>-</p>
+        <p class="deixaazul"><%= event.name %></p>
+        <p class="deixarosa">//</p>
+        <div class="deixaazul">
+          <%= form_hora event.time %>
+        </div>
+        <div class="deixarosa">
+          //
+        </div>
+        <div class="deixaazul">
+          <%= event.place %>
+        </div>
+        <p class="deixaazulclaro">
+          (<%= event.more_information %>)
+        </p>
 
-    <table>
-      <thead>
-        <tr>
-          <th>Event date</th>
-          <th>Time</th>
-          <th>Name</th>
-          <th>Place</th>
-          <th></th>
-          <th></th>
-          <th></th>
-        </tr>
-      </thead>
+      </strong>
+      <br>
+      <!-- <div class="btn-group btn-sm">
+       <%= link_to 'Show', event, class: "btn btn-primary" %>
+       <%= link_to 'Edit', edit_event_path(event), class: "btn btn-primary" %>
+       <%= link_to 'Destroy', event, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-primary" %>
+     </div> -->
+     <% end %>
 
-      <tbody>
-        <% @events.each do |event| %>
-        <tr>
-          <td><%= event.event_date %></td>
-          <td><%= event.time %></td>
-          <td><%= event.name %></td>
-          <td><%= event.place %></td>
-          <td><%= link_to 'Show', event %></td>
-          <td><%= link_to 'Edit', edit_event_path(event) %></td>
-          <td><%= link_to 'Destroy', event, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-        </tr>
-        <% end %>
-      </tbody>
-    </table>
+     <br>
 
-    <br>
-
-    <%= link_to 'New Event', new_event_path %>
-  
-    </div>
-    
   </div>
+
+</div>
 </div>

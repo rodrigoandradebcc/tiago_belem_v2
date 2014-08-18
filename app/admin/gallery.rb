@@ -26,6 +26,7 @@ ActiveAdmin.register Gallery do
     column :edit 
   end
   column "Release Date", :created_at
+  actions
 end
   #
   # or

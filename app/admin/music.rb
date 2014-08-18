@@ -1,19 +1,15 @@
-ActiveAdmin.register Photo do
-
+ActiveAdmin.register Music do
+  permit_params :link
+  index do
+    column "Link da Música", :link
+    actions
+  end
 
   # See permitted parameters documentation:
   # https://github.com/gregbell/active_admin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
   #
-   permit_params :name, :image, :gallery_id, galleries_attributes: [:name]
-  index do
-    column :name
-   column "Gallery", :gallery do |gallery|
-    gallery.name
-   end
-   column :image
-  column "Release Date", :created_at
-  actions
-end
+  # permit_params :list, :of, :attributes, :on, :model
+  #
   # or
   #
   # permit_params do

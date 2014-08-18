@@ -1,5 +1,5 @@
 <div class="container">
-<div class="row mudatexto">
+<div class="row">
     <%= form_for(@event) do |f| %>
     <% if @event.errors.any? %>
     <div id="error_explanation">
@@ -13,21 +13,25 @@
     </div>
     <% end %>
 
-    <div class="field">
+    <div>
       <%= f.label :event_date %><br>
       <%= f.date_select :event_date %>
     </div>
-    <div class="field">
+    <div>
       <%= f.label :time %><br>
       <%= f.datetime_select :time %>
     </div>
-    <div class="field">
+    <div>
       <%= f.label :name %><br>
       <%= f.text_field :name %>
     </div>
-    <div class="field">
+    <div>
       <%= f.label :place %><br>
       <%= f.text_field :place %>
+    </div>
+    <div>
+      <%= f.label :more_information %><br>
+      <%= f.text_field :more_information %>
     </div>
     <div class="actions">
     <br>

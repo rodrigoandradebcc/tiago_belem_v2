@@ -2,22 +2,15 @@
   <div class="row">
     <% @musics.each do |music| %>
     <object height="18" width="100%"><td><%= raw (music.link)%></td></object>
-
-    <div class="btn-group pull-right"><%= link_to 'Show', music, :height => "42", :width => "20", class: "btn btn-primary" %>
+    <br>
+    <br>
+   <!--  <div class="btn-group pull-right"><%= link_to 'Show', music, :height => "42", :width => "20", class: "btn btn-primary" %>
       <%= link_to 'Edit', edit_music_path(music), class: "btn btn-primary" %>
       <%= link_to 'Destroy', music, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-primary" %>
       <br>
       <br>
-    </div>
+    </div> -->
     
     <% end %>
-    <br>
-    <br>
-    <br>  
-    <%= link_to 'New Music', new_music_path, class: "btn btn-primary" %>
-    <br>
-    <br>
-    <br>  
-    
   </div>
 </div>

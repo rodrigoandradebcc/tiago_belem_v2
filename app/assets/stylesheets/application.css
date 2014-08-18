@@ -17,8 +17,13 @@
    font-family: "Lucida Sans Typewriter", "Lucida Console", Monaco, "Bitstream Vera Sans Mono", monospace;
  }
 
- body{
- 	padding-top: 70px; 
+ *{
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  padding-top: 70px; 
   background-size:cover;
 }
 .container-navbar { 
@@ -98,6 +103,7 @@
 
 }
 
+<<<<<<< HEAD
 
 
 
@@ -105,6 +111,11 @@
 .circle-responsive:hover {
   border: solid #a80f1a 5px;
 }
+=======
+  .circle-responsive:hover {
+    border: solid #a80f1a 5px;
+  }
+>>>>>>> cd5dd9fc7ccb150fb5e2efeb83acb64521e1ee6c
 
 
 .mudatexto {
@@ -129,10 +140,42 @@
 
  }
 
+ .deixarosa {
+  color: #da143c !important;
+  display: inline-block;
+  font-size: 18px;
+  margin-bottom: -5px;
+  font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif !important;
+}
 
- .mudatexto2 {
+.deixaazul {
+  color: #52948f !important;
+  display: inline-block;
+  margin-left: -3px;
+  margin-right: -2px;
+  margin-bottom: -5px;
+  margin-top: -5px;
+  font-size: 18px;
+  font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif !important;
+}
+
+.deixaazulclaro{
+  display: inline-block;
+  color: #a7cfcf !important;
+  font-size: 13px;
+  margin-bottom: -10px;
+  font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif !important;  
+}
+
+.mudatexto2 {
   color: rgb(181,222,222) !important;
   text-align: justify;
+  font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif !important;
+}
+
+.mudatexto3 {
+  text-align: center;
+  color: #FFFFFF !important;
   font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif !important;
 }
 
@@ -334,7 +377,11 @@ a {
   display: inline-block;
   margin: 10px 5px 0 5px;
   vertical-align: top;
+<<<<<<< HEAD
   height: 250px;
+=======
+  height: 270px;
+>>>>>>> cd5dd9fc7ccb150fb5e2efeb83acb64521e1ee6c
   float: left;
 }
 

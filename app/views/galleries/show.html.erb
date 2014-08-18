@@ -14,7 +14,7 @@
          
       <%= link_to "", photo, :method => :delete, data: {:confirm => 'Are you sure?'}, :class => "btn-xs btn-primary glyphicon glyphicon-remove" , role: "button"  %>
         
-        <%= link_to (image_tag (photo.image_url(:thumb).to_s )), photo.image_url, { class: "grouped_elements", :rel => "zomg_awesome_images"} %>
+        <%= link_to (image_tag (photo.image_url(:thumb).to_s )), photo.image_url,  class: "grouped_elements", :rel => "zomg_awesome_images" %>
 
        
 

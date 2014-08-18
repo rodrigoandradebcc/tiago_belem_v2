@@ -1,28 +1,42 @@
 
-<div class="circle-container">
-	<div class = "row">
-		<div class = "col-lg-4 col-lg-offset-1">
-			
-			<div class="circle-responsive">
-				<a href="/galleries">
-					<div class = "circle-content">FOTOS</div>
-				</a>
+<div class="container">
+	<div class="row clearfix">
+		<div class="col-md-6 column">
+			<div class="row clearfix">
+				<div class="col-md-6 column">
+					
+					
+				<%= button_to "Photos", galleries_path, class: "circle", method: :get %>
+				
+					
+				</div>
+				<div class="col-md-6 column">
+				<% @galleries.each do |gallery| %>
+       			<%= link_to ((image_tag (gallery.photos.first.image_url(:thumb) ))), galleries_path, alt: "50x50" %>
+            <% end %>
+				</div>
 			</div>
-			
-
 		</div>
-		
-		
-		
-		<div class = "col-lg-4 col-lg-offset-2" id="right-circle">
-			
-			<div class="circle-responsive">
-				<a href="/galleries">
-					<div class = "circle-content ">VÍDEOS</div>
-				</a>
-			</div>	
-			
-		</div>
+		<div class="col-md-6 column">
+			<div class="row clearfix">
+				<div class="col-md-6 column">
+						
+				</div>
+				<div class="col-md-6 column">
+				 <%= button_to "VIDEOS", galleries_path, class: "circle",  method: :get
+				%>
 
+				</div>
+			</div>
+		</div>
 	</div>
 </div>
+		
+		
+
+
+
+
+
+
+

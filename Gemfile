@@ -34,6 +34,7 @@ end
 
 gem 'activeadmin', github: 'gregbell/active_admin'
 
+gem 'redcarpet'
 gem 'kaminari'
 gem 'fancybox2-rails'
 gem 'rails-gallery'

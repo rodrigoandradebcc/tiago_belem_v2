@@ -1,5 +1,5 @@
 class GalleriesController < ApplicationController
-  before_action :set_gallery, only: [:show, :edit, :update, :destroy]
+  before_action :set_gallery, only: [:show]
 
   # GET /galleries
   # GET /galleries.json
@@ -51,6 +51,8 @@ class GalleriesController < ApplicationController
     end
   end
 
+ 
+
   # DELETE /galleries/1
   # DELETE /galleries/1.json
     
@@ -70,6 +72,6 @@ class GalleriesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def gallery_params
-      params.require(:gallery).permit(:name, photos_attributes: [:id, :name, :image, :remote_image_url, :_destroy])
+      params.require(:gallery).permit(:name, :content, photos_attributes: [:id, :name, :image, :remote_image_url])
     end
 end

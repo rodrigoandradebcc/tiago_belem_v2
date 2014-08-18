@@ -2,18 +2,17 @@
   <p id="notice"><%= notice %></p>
 
   <header class="clearfix">
-    <h1>Gallery <span><%= @gallery.name %></span></h1> 
+    <h1><%= @gallery.name %></h1> 
   </header>
   <div class="main">        
     <ul id="og-grid" class="og-grid">
-
+            
+        
       <% for photo in @gallery.photos %>
+
       <li>
 
-         <%= link_to "", edit_photo_path(photo), :class => "btn-xs btn-primary glyphicon glyphicon-pencil" , role: "button"  %>
          
-      <%= link_to "", photo, :method => :delete, data: {:confirm => 'Are you sure?'}, :class => "btn-xs btn-primary glyphicon glyphicon-remove" , role: "button"  %>
-        
         <%= link_to (image_tag (photo.image_url(:thumb).to_s )), photo.image_url,  class: "grouped_elements", :rel => "zomg_awesome_images" %>
 
        
@@ -24,7 +23,9 @@
   </div>
 
 
-  <%= link_to "Add a photo", new_photo_path(:gallery_id => @gallery) %> |
-  <%= link_to 'Edit', edit_gallery_path(@gallery) %> |
-  <%= link_to 'Back', galleries_path %>
+ 
+ 
 </div>
+<footer>
+  <%= link_to 'Back', galleries_path %>
+</footer>

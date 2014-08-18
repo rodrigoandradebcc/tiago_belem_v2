@@ -1,37 +1,39 @@
-<h1>Listing galleries</h1>
 
-<table>
-  <thead>
-  
-    <tr>
-      <th>Name</th>
-      <th>Size</th>
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
-  </thead>
+<div class="container">
+  <div class="row clearfix">
+    <div class="col-md-12 column">
+      <div class="row">
+       <% @galleries.each do |gallery| %>
+        <div class="col-md-4">
+          <div class="thumbnail">
+         
+           <%= link_to ((image_tag (gallery.photos.first.image_url ))), gallery, alt: "300x200" %>
+           
+            <div class="caption">
+              <h3>
+                 <td><%= gallery.name %></td>
+              </h3>
+              <%= markdown(gallery.content) %>
+              <p>
+                <%= link_to 'Show', gallery, class: "btn btn-primary", role: :button %></a> <a class="btn" href="#">Photos: <%= gallery.photos.size %></a>
+              </p>
+            </div>
+          </div>
+        </div>
+            <% end %>
 
-  <tbody>
-
-    <% @galleries.each do |gallery| %>
-      
-      <tr>
-        <td><%= gallery.name %></td>
-        <td>Photos: <%= gallery.photos.size %></td>
-        <td><%= link_to 'Show', gallery %></td>
-        <td><%= link_to 'Edit', edit_gallery_path(gallery) %></td>
-        <td><%= link_to 'Destroy', gallery, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
+      </div>
+    </div>
+  </div>
+</div>
+    
      
-    <% end %>
+
+     
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script src="http://blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
 <script src="js/bootstrap-image-gallery.min.js"></script>
-  </tbody>
-</table>
 
-<br>
 
-<%= link_to 'New Gallery', new_gallery_path %>
+

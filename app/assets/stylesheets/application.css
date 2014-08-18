@@ -116,10 +116,6 @@
 
   }
 
-
-
-
-
   .circle-responsive:hover {
     border: solid #a80f1a 5px;
   }
@@ -151,6 +147,12 @@
  .mudatexto2 {
   color: rgb(181,222,222) !important;
   text-align: justify;
+  font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif !important;
+}
+
+.mudatexto3 {
+  text-align: center;
+  color: #FFFFFF !important;
   font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif !important;
 }
 
@@ -243,26 +245,26 @@ html { height: 100%; }
 /* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
 .clearfix:before,
 .clearfix:after {
-    content: " ";
-    display: table;
+  content: " ";
+  display: table;
 }
 
 .clearfix:after {
-    clear: both;
+  clear: both;
 }
 
 .clearfix {
-    *zoom: 1;
+  *zoom: 1;
 }
 
 body {
-    font-family: 'Lato', Calibri, Arial, sans-serif;
-    background: #f9f9f9;
-    font-weight: 300;
-    font-size: 15px;
-    color: #333;
-    overflow: scroll;
-    overflow-x: hidden;
+  font-family: 'Lato', Calibri, Arial, sans-serif;
+  background: #f9f9f9;
+  font-weight: 300;
+  font-size: 15px;
+  color: #333;
+  overflow: scroll;
+  overflow-x: hidden;
 }
 
 a {
@@ -353,7 +355,7 @@ a {
   margin: 10px 5px 0 5px;
   vertical-align: top;
   height: 270px;
-float: left;
+  float: left;
 }
 
 .og-grid li > a,

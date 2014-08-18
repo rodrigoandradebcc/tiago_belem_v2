@@ -1,41 +1,23 @@
 <div class="container">
   <div class="row">
-    <div class="col-md-offset-9 col-md-3">
-      <h1>Listing events</h1>
-
-    <table>
-      <thead>
-        <tr>
-          <th>Event date</th>
-          <th>Time</th>
-          <th>Name</th>
-          <th>Place</th>
-          <th></th>
-          <th></th>
-          <th></th>
-        </tr>
-      </thead>
-
-      <tbody>
-        <% @events.each do |event| %>
-        <tr>
-          <td><%= event.event_date %></td>
-          <td><%= event.time %></td>
-          <td><%= event.name %></td>
-          <td><%= event.place %></td>
-          <td><%= link_to 'Show', event %></td>
-          <td><%= link_to 'Edit', edit_event_path(event) %></td>
-          <td><%= link_to 'Destroy', event, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-        </tr>
-        <% end %>
-      </tbody>
-    </table>
+    <div class="col-md-offset-8 col-md-4">
+      <% @events.each do |event| %>
+      <%= event.event_date %>-<%= event.name %>//<%= event.time %>//<%= event.place %>
+      <div class="btn-group">
+       <%= link_to 'Show', event, class: "btn btn-primary" %>
+       <%= link_to 'Edit', edit_event_path(event), class: "btn btn-primary" %>
+       <%= link_to 'Destroy', event, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-primary" %>
+     </div>
+     <% end %>
 
     <br>
 
-    <%= link_to 'New Event', new_event_path %>
-  
+    <div class="col-md-offset-4">
+      <br>
+      <%= link_to 'Novo Evento', new_event_path, class: "btn btn-primary" %>
     </div>
-    
+
   </div>
+
+</div>
 </div>

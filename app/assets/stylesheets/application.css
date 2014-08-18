@@ -32,7 +32,7 @@
  display: inline-block;
  font-weight: 700;
  text-transform: uppercase;
- font-size: 0.8em;
+ font-size: 0.79em;
  letter-spacing: 1px;
  padding: 0.4em 0.9em;
  -webkit-transition: all 0.2s;
@@ -151,7 +151,7 @@
  .mudatexto2 {
   color: rgb(181,222,222) !important;
   text-align: justify;
-  font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+  font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif !important;
 }
 
 .colocaborda {

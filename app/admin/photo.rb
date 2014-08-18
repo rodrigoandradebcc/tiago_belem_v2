@@ -4,8 +4,15 @@ ActiveAdmin.register Photo do
   # See permitted parameters documentation:
   # https://github.com/gregbell/active_admin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
   #
-   permit_params :name, :image, :gallery_id
-  #
+   permit_params :name, :image, :gallery_id, galleries_attributes: [:name]
+  index do
+    column :name
+   column "Gallery", :gallery do |gallery|
+    gallery.name
+   end
+   column :image
+  column "Release Date", :created_at
+end
   # or
   #
   # permit_params do

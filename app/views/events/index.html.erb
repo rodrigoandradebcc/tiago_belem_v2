@@ -1,18 +1,37 @@
 <div class="container">
   <div class="row">
-    <div class="col-md-offset-8 col-md-4">
+    <div class="col-md-offset-7 col-md-5">
       <% @events.each do |event| %>
-      <%= event.event_date %>-<%= event.name %>//<%= event.time %>//<%= event.place %>
-      <div class="btn-group">
+      
+      <p class="deixarosa"><%= event_dateform (event.event_date) %>-</p>
+      
+
+      <p class="deixaazul"><%= event.name %></p>
+
+      <p class="deixarosa">//</p>
+      <div class="deixaazul">
+        <%= form_hora event.time %>
+      </div>
+      <div class="deixarosa">
+        //
+      </div>
+      <div class="deixaazul">
+        <%= event.place %>
+      </div>
+      <p class="deixaazulclaro">
+        (<%= event.more_information %>)
+      </p>
+
+      <!-- <div class="btn-group btn-sm">
        <%= link_to 'Show', event, class: "btn btn-primary" %>
        <%= link_to 'Edit', edit_event_path(event), class: "btn btn-primary" %>
        <%= link_to 'Destroy', event, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-primary" %>
-     </div>
+     </div> -->
      <% end %>
 
-    <br>
+     <br>
 
-    <div class="col-md-offset-4">
+     <div class="col-md-offset-4">
       <br>
       <%= link_to 'Novo Evento', new_event_path, class: "btn btn-primary" %>
     </div>

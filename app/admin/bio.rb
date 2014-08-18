@@ -1,19 +1,14 @@
-ActiveAdmin.register Gallery do
-
+ActiveAdmin.register Bio do
+  permit_params :content
+  index do
+    column "Conteudo",:content
+    actions
+  end
 
   # See permitted parameters documentation:
   # https://github.com/gregbell/active_admin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
   #
-  permit_params :name, photos_attributes: [:gallery_id]
-
-  index do
-    column :name
-   column "Photos in Gallery", :gallery do |gallery|
-    gallery.photos.size 
-  end
-  column "Release Date", :created_at
-  actions
-end
+  # permit_params :list, :of, :attributes, :on, :model
   #
   # or
   #

@@ -5,22 +5,11 @@
 		<div class="col-md-4 column" style="max-width:100%;">
 			<div align="center" style="margin-bottom: 1cm;">
 				<a href="<%= endorsee.link %>">
-					<%= image_tag endorsee.image_url(:thumb).to_s , {class: "img-responsive",style: "height: 200px;" } %>
+					<%= image_tag endorsee.image_url(:thumb).to_s , {class: "img-responsive", style: "height: 300px;" } %>
 				</a>
 				<br>
-				<div class="btn-group">
-					<%= link_to 'Exibir', endorsee, :class => "btn btn-primary" , role: "button" %>
-					<%= link_to 'Editar', edit_endorsee_path(endorsee), :class => "btn btn-primary", role: "button"  %>
-					<%= link_to 'Deletar', endorsee, method: :delete, data: { confirm: 'Você tem certeza?'}, :class => "btn btn-primary" , role: "button"%>
-				</div>
 			</div>
-
 		</div>
 		<% end %>
-		
-
-		<div class="col-md-12 column" style="margin-top: 20px;">
-			<%= link_to 'New Endorsee', new_endorsee_path, class: "btn btn-primary" %>
-		</div>
 	</div>
 </div>

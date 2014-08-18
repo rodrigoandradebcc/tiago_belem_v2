@@ -6,20 +6,6 @@
       <p class="mudatexto"><strong>BIO</strong></p>
       <div class="mudatexto" > <%= raw bio.content %></div>
     </div>
-
-    <div class="col-md-12">
-      <br>
-      <%= link_to 'Show', bio, :class => "btn btn-primary" %>
-      <%= link_to 'Edit', edit_bio_path(bio), :class => "btn btn-primary" %>
-      <%= link_to 'Destroy', bio, method: :delete, data: { confirm: 'Are you sure?' } , :class => "btn btn-primary"%>
-    </div>
-    <% end %>
-
-    <% if @bios.empty? %>
-    <div class="col-md-12">
-      <br>
-      <%= link_to 'New Bio', new_bio_path, :class => "btn btn-primary" %>
-    </div>
     <% end %>
   </div>
 </div>

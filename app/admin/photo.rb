@@ -12,6 +12,7 @@ ActiveAdmin.register Photo do
    end
    column :image
   column "Release Date", :created_at
+  actions
 end
   # or
   #

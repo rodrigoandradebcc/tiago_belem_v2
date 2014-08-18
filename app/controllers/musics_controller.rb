@@ -1,15 +1,10 @@
 class MusicsController < ApplicationController
-  before_action :set_music, only: [:show, :edit, :update, :destroy]
+  before_action :set_music, only: [:edit, :update, :destroy]
 
   # GET /musics
   # GET /musics.json
   def index
     @musics = Music.all
-  end
-
-  # GET /musics/1
-  # GET /musics/1.json
-  def show
   end
 
   # GET /musics/new

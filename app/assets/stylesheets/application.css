@@ -20,10 +20,10 @@
  *{
   padding: 0;
   margin: 0;
- }
+}
 
- body{
- 	padding-top: 70px; 
+body{
+  padding-top: 70px; 
   background-size:cover;
 }
 .container-navbar { 
@@ -148,11 +148,11 @@
 
  }
 
-.deixarosa {
+ .deixarosa {
   color: #da143c !important;
   display: inline-block;
   font-size: 18px;
-  margin-bottom: -2px;
+  margin-bottom: -5px;
   font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif !important;
 }
 
@@ -161,7 +161,8 @@
   display: inline-block;
   margin-left: -3px;
   margin-right: -2px;
-  margin-bottom: -2px;
+  margin-bottom: -5px;
+  margin-top: -5px;
   font-size: 18px;
   font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif !important;
 }
@@ -169,13 +170,12 @@
 .deixaazulclaro{
   display: inline-block;
   color: #a7cfcf !important;
-  font-size: 15px;
-  padding-top:-200px;
-  margin-top:-200px;
+  font-size: 13px;
+  margin-bottom: -10px;
   font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif !important;  
 }
 
- .mudatexto2 {
+.mudatexto2 {
   color: rgb(181,222,222) !important;
   text-align: justify;
   font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif !important;

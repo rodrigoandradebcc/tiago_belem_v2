@@ -17,11 +17,6 @@
    font-family: "Lucida Sans Typewriter", "Lucida Console", Monaco, "Bitstream Vera Sans Mono", monospace;
  }
 
- *{
-  padding: 0;
-  margin: 0;
-}
-
 body{
   padding-top: 70px; 
   background-size:cover;
@@ -46,7 +41,6 @@ body{
 
 
 .circle-container{
-
  min-width: 768px;
  padding-top: 5%;
  text-align: center;
@@ -59,72 +53,60 @@ body{
 
   @media (min-width: 970px) {
     .iframe{
-      
-       width: 150px;
-      height: 150px;
-    }
-    .circle { 
-      background: #b5dddd ;
-      border-radius: 50%;
-      height: 150px;
-      width: 150px;
-      border: solid #28474e 5px;
-      color: #28474e;
-      letter-spacing: 1px;
-      text-decoration: none;
-      font-weight: 700;
-      text-transform: uppercase;
-      font-size: 1em;
-      -webkit-transition: all 0.2s;
-      transition: all 0.2s;
-    }
-  }
 
-  @media (min-width: 750px) and (max-width: 970px) { 
-    
+     width: 150px;
+     height: 150px;
+   }
    .circle { 
     background: #b5dddd ;
-    border-radius: 25%;
-    height: 50px;
-    width: 50px;
-    border: solid #28474e 1px;
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    border: solid #28474e 5px;
     color: #28474e;
     letter-spacing: 1px;
     text-decoration: none;
     font-weight: 700;
     text-transform: uppercase;
-    font-size: 0.5em;
+    font-size: 1em;
     -webkit-transition: all 0.2s;
     transition: all 0.2s;
   }
-
-
-
-
 }
 
-<<<<<<< HEAD
+@media (min-width: 750px) and (max-width: 970px) { 
 
+ .circle { 
+  background: #b5dddd ;
+  border-radius: 25%;
+  height: 50px;
+  width: 50px;
+  border: solid #28474e 1px;
+  color: #28474e;
+  letter-spacing: 1px;
+  text-decoration: none;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.5em;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  }
 
+}
 
 
 .circle-responsive:hover {
   border: solid #a80f1a 5px;
 }
-=======
-  .circle-responsive:hover {
-    border: solid #a80f1a 5px;
-  }
->>>>>>> cd5dd9fc7ccb150fb5e2efeb83acb64521e1ee6c
-
+.circle-responsive:hover {
+  border: solid #a80f1a 5px;
+}
 
 .mudatexto {
   color: #ffffff !important;
   text-align: justify;
   font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
 }
-
-
 
 .ficatransparente{
   background-color: transparent !important;
@@ -241,6 +223,13 @@ body{
   -o-column-rule: 1px dotted transparent;
   text-align: justify;
 }
+
+.vid {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px; height: 0; overflow: hidden;
+}
+
 
 .photos {
   border: solid 1px #CCC;
@@ -377,11 +366,7 @@ a {
   display: inline-block;
   margin: 10px 5px 0 5px;
   vertical-align: top;
-<<<<<<< HEAD
-  height: 250px;
-=======
   height: 270px;
->>>>>>> cd5dd9fc7ccb150fb5e2efeb83acb64521e1ee6c
   float: left;
 }
 

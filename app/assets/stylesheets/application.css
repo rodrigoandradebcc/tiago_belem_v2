@@ -17,7 +17,7 @@
    font-family: "Lucida Sans Typewriter", "Lucida Console", Monaco, "Bitstream Vera Sans Mono", monospace;
  }
 
-body{
+ body{
   padding-top: 70px; 
   background-size:cover;
 }
@@ -90,7 +90,7 @@ body{
   font-size: 0.5em;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
-  }
+}
 
 }
 
@@ -225,9 +225,9 @@ body{
 }
 
 .vid {
-    position: relative;
-    padding-bottom: 56.25%;
-    padding-top: 30px; height: 0; overflow: hidden;
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px; height: 0; overflow: hidden;
 }
 
 
@@ -556,7 +556,7 @@ a {
 @import "http://fonts.googleapis.com/css?family=Roboto:400,500";
 
 .box > .icon { text-align: center; position: relative; }
-.box > .icon > .image { position: relative; z-index: 2; margin: auto; width: 88px; height: 88px; border: 8px solid white; line-height: 88px; border-radius: 50%; background: #b4dddd; vertical-align: middle; }
+.box > .icon > .image { position: relative; z-index: 2; margin: auto; width: 88px; height: 88px; border: 8px solid white; line-height: 88px; border-radius: 50%; background: #80c8c9; vertical-align: middle; }
 .box > .icon:hover > .image { background: #333; }
 .box > .icon > .image > i { font-size: 36px !important; color: #fff !important; }
 .box > .icon:hover > .image > i { color: white !important; }
@@ -566,5 +566,22 @@ a {
 .box > .icon > .info > p { font-family: "Roboto",sans-serif !important; font-size: 13px; color: #666; line-height: 1.5em; margin: 20px;}
 .box > .icon:hover > .info > h3.title, .box > .icon:hover > .info > p, .box > .icon:hover > .info > .more > a { color: #222; }
 .box > .icon > .info > .more a { font-family: "Roboto",sans-serif !important; font-size: 12px; color: #222; line-height: 12px; text-transform: uppercase; text-decoration: none; }
-.box > .icon:hover > .info > .more > a { color: #fff; padding: 6px 8px; background-color: #b4dddd; }
+.box > .icon:hover > .info > .more > a { color: #fff; padding: 6px 8px; background-color: #80c8c9; }
 .box .space { height: 30px; }
+
+.textarea {
+  width: 100%;
+  border-top: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+
+.largura{
+  width: 100%;
+}
+
+.branco{
+  background-color: #80c8c9 !important;
+  border-color: #80c8c9 !important;
+}

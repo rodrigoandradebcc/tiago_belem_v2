@@ -59,13 +59,13 @@
 						<div class="info">
 							<h3 class="title" style="color:#ffffff;">Fotos</h3>
 							<p class="mudatexto">
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in lobortis nisl, vitae iaculis sapien. Phasellus ultrices gravida massa luctus ornare. Suspendisse blandit quam elit, eu imperdiet neque semper.
+								<strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in lobortis nisl, vitae iaculis sapien. Phasellus ultrices gravida massa luctus ornare. Suspendisse blandit quam elit, eu imperdiet neque semper.</strong>
 							</p>
-							<div class="more">
-								<a href="/galleries" title="Title Link">
-									Read More <i class="fa fa-angle-double-right"></i>
-								</a>
+
+							<div style="branco">
+								<%= button_to "Ver Mais", galleries_path, class: "branco btn btn-default",  method: :get %>
 							</div>
+
 						</div>
 					</div>
 					<div class="space"></div>
@@ -80,13 +80,9 @@
 						<div class="info">
 							<h3 class="title" style="color:#ffffff;">Vídeos</h3>
 							<p class="mudatexto">
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in lobortis nisl, vitae iaculis sapien. Phasellus ultrices gravida massa luctus ornare. Suspendisse blandit quam elit, eu imperdiet neque semper.
+								<strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in lobortis nisl, vitae iaculis sapien. Phasellus ultrices gravida massa luctus ornare. Suspendisse blandit quam elit, eu imperdiet neque semper.</strong>
 							</p>
-							<div class="more">
-								<a href="/movies" title="Title Link">
-									Read More <i class="fa fa-angle-double-right"></i>
-								</a>
-							</div>
+							<%= button_to "Ver Mais", galleries_path, class: "branco btn btn-default",  method: :get %>
 						</div>
 					</div>
 					<div class="space"></div>

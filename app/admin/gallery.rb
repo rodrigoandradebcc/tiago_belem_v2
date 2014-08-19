@@ -9,11 +9,10 @@ ActiveAdmin.register Gallery do
    form do |f|
       f.inputs "Details" do
         f.input :name
-        f.input :published_at, :label => "Publish Post At"
         f.input :content
       end
       f.inputs "Content" do
-        f.input :body
+        
       end
       f.actions
     end

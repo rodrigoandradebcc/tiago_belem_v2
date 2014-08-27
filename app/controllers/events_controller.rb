@@ -5,6 +5,48 @@ class EventsController < ApplicationController
   # GET /events.json
   def index
     @events = Event.all
+    @jan = []
+    @fev = []
+    @mar = []
+    @abr = []
+    @mai = []
+    @jun = []
+    @jul = []
+    @ago = []
+    @set = []
+    @out = []
+    @nov = []
+    @dez = []
+    unless @events.empty?
+      for event in @events do
+        if event.event_date.strftime("%B") == "January"
+          @jan << event
+        elsif event.event_date.strftime("%B") == "February"
+          @fev << event
+        elsif event.event_date.strftime("%B") == "March"
+          @mar << event
+        elsif event.event_date.strftime("%B") == "April"
+          @abr << event
+        elsif event.event_date.strftime("%B") == "May"
+          @mai << event
+        elsif event.event_date.strftime("%B") == "June"
+          @jun << event
+        elsif event.event_date.strftime("%B") == "July"
+          @jul << event
+        elsif event.event_date.strftime("%B") == "August"
+          @ago << event
+        elsif event.event_date.strftime("%B") == "September"
+          @set << event
+        elsif event.event_date.strftime("%B") == "October"
+          @out << event
+        elsif event.event_date.strftime("%B") == "November"
+          @nov << event
+        elsif event.event_date.strftime("%B") == "December"        
+          @dez << event
+        end
+      end
+    end
+
   end
 
   # GET /events/1

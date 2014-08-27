@@ -1,52 +1,3 @@
-<!-- 
-<div class="container">
-	<div class="row clearfix">
-		<div class="col-md-6 column">
-			<div class="row clearfix">
-				<div class="col-md-6 column">
-					
-					
-				<%= button_to "Photos", galleries_path, class: "circle", method: :get %>
-				
-					
-				</div>
-				<div class="col-md-6 column">
-				<% @galleries.each do |gallery| %>
-       			<%= link_to ((image_tag (gallery.photos.first.image_url(:thumb) ))), galleries_path, alt: "50x50" %>
-            <% end %>
-				</div>
-			</div>
-		</div>
-		<div class="col-md-6 column">
-			<div class="row clearfix">
-				<div class="col-md-6 column">
-						
-				</div>
-				<div class="col-md-6 column">
-				 <%= button_to "VIDEOS", movies_path, class: "circle",  method: :get
-				%>
-
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-		
-
-		
-		<div class = "col-lg-4 col-lg-offset-2" id="right-circle">
-			
-			<div class="circle-responsive">
-				<a href="/movies">
-					<div class = "circle-content ">VÍDEOS</div>
-				</a>
-			</div>	
-			
-		</div>
-
-
-	-->
-
 <br>
 <br>
 	<div class="container">
@@ -58,10 +9,9 @@
 						<div class="image"><i class="fa fa-image"></i></div>
 						<div class="info">
 							<h3 class="title" style="color:#ffffff;">Fotos</h3>
-							<p class="mudatexto">
-								<strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in lobortis nisl, vitae iaculis sapien. Phasellus ultrices gravida massa luctus ornare. Suspendisse blandit quam elit, eu imperdiet neque semper.</strong>
+							<p>
+								<%= image_tag "imagens.jpg", class: "image-resposive", height: 250 %>
 							</p>
-
 							<div style="branco">
 								<%= button_to "Ver Mais", galleries_path, class: "branco btn btn-default",  method: :get %>
 							</div>
@@ -79,8 +29,8 @@
 						<div class="image"><i class="fa fa-youtube-play"></i></div>
 						<div class="info">
 							<h3 class="title" style="color:#ffffff;">Vídeos</h3>
-							<p class="mudatexto">
-								<strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in lobortis nisl, vitae iaculis sapien. Phasellus ultrices gravida massa luctus ornare. Suspendisse blandit quam elit, eu imperdiet neque semper.</strong>
+							<p>
+								<%= image_tag "videos.jpg", class: "image-resposive", height: 250 %>
 							</p>
 							<%= button_to "Ver Mais", galleries_path, class: "branco btn btn-default",  method: :get %>
 						</div>

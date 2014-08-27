@@ -6,4 +6,5 @@ module EventsHelper
 	def form_hora(date)
 		date.strftime("%I:%MH")
 	end
+
 end

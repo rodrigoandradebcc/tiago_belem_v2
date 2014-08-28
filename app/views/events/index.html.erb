@@ -1,8 +1,8 @@
 <div class="container">
   <div class="row">
     <div class="col-md-offset-7 col-md-5">
-      <% @events.each do |event| %>
-      
+      <h3 id="azulclaro">JANEIRO</h3>
+      <% @jan.each do |event| %>
       <strong>
         <p class="deixarosa"><%= event_dateform (event.event_date) %>-</p>
         <p class="deixaazul"><%= event.name %></p>
@@ -22,16 +22,297 @@
 
       </strong>
       <br>
-      <!-- <div class="btn-group btn-sm">
-       <%= link_to 'Show', event, class: "btn btn-primary" %>
-       <%= link_to 'Edit', edit_event_path(event), class: "btn btn-primary" %>
-       <%= link_to 'Destroy', event, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-primary" %>
-     </div> -->
-     <% end %>
+      <% end %>
+      <br>
+    </div>
 
-     <br>
+    <div class="col-md-offset-7 col-md-5">
+      <h3 id="azulclaro">FEVEREIRO</h3>
+      <% @fev.each do |event| %>
+      <strong>
+        <p class="deixarosa"><%= event_dateform (event.event_date) %>-</p>
+        <p class="deixaazul"><%= event.name %></p>
+        <p class="deixarosa">//</p>
+        <div class="deixaazul">
+          <%= form_hora event.time %>
+        </div>
+        <div class="deixarosa">
+          //
+        </div>
+        <div class="deixaazul">
+          <%= event.place %>
+        </div>
+        <p class="deixaazulclaro">
+          (<%= event.more_information %>)
+        </p>
+
+      </strong>
+      <br>
+      <% end %>
+      <br>
+    </div>
+
+    <div class="col-md-offset-7 col-md-5">
+      <h3 id="azulclaro">MARÇO</h3>
+      <% @mar.each do |event| %>
+      <strong>
+        <p class="deixarosa"><%= event_dateform (event.event_date) %>-</p>
+        <p class="deixaazul"><%= event.name %></p>
+        <p class="deixarosa">//</p>
+        <div class="deixaazul">
+          <%= form_hora event.time %>
+        </div>
+        <div class="deixarosa">
+          //
+        </div>
+        <div class="deixaazul">
+          <%= event.place %>
+        </div>
+        <p class="deixaazulclaro">
+          (<%= event.more_information %>)
+        </p>
+
+      </strong>
+      <br>
+      <% end %>
+      <br>
+    </div>
+
+    <div class="col-md-offset-7 col-md-5">
+      <h3 id="azulclaro">ABRIL</h3>
+      <% @abr.each do |event| %>
+      <strong>
+        <p class="deixarosa"><%= event_dateform (event.event_date) %>-</p>
+        <p class="deixaazul"><%= event.name %></p>
+        <p class="deixarosa">//</p>
+        <div class="deixaazul">
+          <%= form_hora event.time %>
+        </div>
+        <div class="deixarosa">
+          //
+        </div>
+        <div class="deixaazul">
+          <%= event.place %>
+        </div>
+        <p class="deixaazulclaro">
+          (<%= event.more_information %>)
+        </p>
+
+      </strong>
+      <br>
+      <% end %>
+      <br>
+    </div>
+
+    <div class="col-md-offset-7 col-md-5">
+      <h3 id="azulclaro">MAIO</h3>
+      <% @mai.each do |event| %>
+      <strong>
+        <p class="deixarosa"><%= event_dateform (event.event_date) %>-</p>
+        <p class="deixaazul"><%= event.name %></p>
+        <p class="deixarosa">//</p>
+        <div class="deixaazul">
+          <%= form_hora event.time %>
+        </div>
+        <div class="deixarosa">
+          //
+        </div>
+        <div class="deixaazul">
+          <%= event.place %>
+        </div>
+        <p class="deixaazulclaro">
+          (<%= event.more_information %>)
+        </p>
+
+      </strong>
+      <br>
+      <% end %>
+      <br>
+    </div>
+
+    <div class="col-md-offset-7 col-md-5">
+      <h3 id="azulclaro">JUNHO</h3>
+      <% @jun.each do |event| %>
+      <strong>
+        <p class="deixarosa"><%= event_dateform (event.event_date) %>-</p>
+        <p class="deixaazul"><%= event.name %></p>
+        <p class="deixarosa">//</p>
+        <div class="deixaazul">
+          <%= form_hora event.time %>
+        </div>
+        <div class="deixarosa">
+          //
+        </div>
+        <div class="deixaazul">
+          <%= event.place %>
+        </div>
+        <p class="deixaazulclaro">
+          (<%= event.more_information %>)
+        </p>
+
+      </strong>
+      <br>
+      <% end %>
+      <br>
+    </div>
+
+    <div class="col-md-offset-7 col-md-5">
+      <h3 id="azulclaro">JULHO</h3>
+      <% @jul.each do |event| %>
+      <strong>
+        <p class="deixarosa"><%= event_dateform (event.event_date) %>-</p>
+        <p class="deixaazul"><%= event.name %></p>
+        <p class="deixarosa">//</p>
+        <div class="deixaazul">
+          <%= form_hora event.time %>
+        </div>
+        <div class="deixarosa">
+          //
+        </div>
+        <div class="deixaazul">
+          <%= event.place %>
+        </div>
+        <p class="deixaazulclaro">
+          (<%= event.more_information %>)
+        </p>
+
+      </strong>
+      <br>
+      <% end %>
+      <br>
+    </div>
+
+    <div class="col-md-offset-7 col-md-5">
+      <h3 id="azulclaro">AGOSTO</h3>
+      <% @ago.each do |event| %>
+      <strong>
+        <p class="deixarosa"><%= event_dateform (event.event_date) %>-</p>
+        <p class="deixaazul"><%= event.name %></p>
+        <p class="deixarosa">//</p>
+        <div class="deixaazul">
+          <%= form_hora event.time %>
+        </div>
+        <div class="deixarosa">
+          //
+        </div>
+        <div class="deixaazul">
+          <%= event.place %>
+        </div>
+        <p class="deixaazulclaro">
+          (<%= event.more_information %>)
+        </p>
+
+      </strong>
+      <br>
+      <% end %>
+      <br>
+    </div>
+
+    <div class="col-md-offset-7 col-md-5">
+      <h3 id="azulclaro">SETEMBRO</h3>
+      <% @set.each do |event| %>
+      <strong>
+        <p class="deixarosa"><%= event_dateform (event.event_date) %>-</p>
+        <p class="deixaazul"><%= event.name %></p>
+        <p class="deixarosa">//</p>
+        <div class="deixaazul">
+          <%= form_hora event.time %>
+        </div>
+        <div class="deixarosa">
+          //
+        </div>
+        <div class="deixaazul">
+          <%= event.place %>
+        </div>
+        <p class="deixaazulclaro">
+          (<%= event.more_information %>)
+        </p>
+
+      </strong>
+      <br>
+      <% end %>
+      <br>
+    </div>
+
+    <div class="col-md-offset-7 col-md-5">
+      <h3 id="azulclaro">OUTUBRO</h3>
+      <% @out.each do |event| %>
+      <strong>
+        <p class="deixarosa"><%= event_dateform (event.event_date) %>-</p>
+        <p class="deixaazul"><%= event.name %></p>
+        <p class="deixarosa">//</p>
+        <div class="deixaazul">
+          <%= form_hora event.time %>
+        </div>
+        <div class="deixarosa">
+          //
+        </div>
+        <div class="deixaazul">
+          <%= event.place %>
+        </div>
+        <p class="deixaazulclaro">
+          (<%= event.more_information %>)
+        </p>
+
+      </strong>
+      <br>
+      <% end %>
+      <br>
+    </div>
+
+    <div class="col-md-offset-7 col-md-5">
+      <h3 id="azulclaro">NOVEMBRO</h3>
+      <% @nov.each do |event| %>
+      <strong>
+        <p class="deixarosa"><%= event_dateform (event.event_date) %>-</p>
+        <p class="deixaazul"><%= event.name %></p>
+        <p class="deixarosa">//</p>
+        <div class="deixaazul">
+          <%= form_hora event.time %>
+        </div>
+        <div class="deixarosa">
+          //
+        </div>
+        <div class="deixaazul">
+          <%= event.place %>
+        </div>
+        <p class="deixaazulclaro">
+          (<%= event.more_information %>)
+        </p>
+
+      </strong>
+      <br>
+      <% end %>
+      <br>
+    </div>
+
+    <div class="col-md-offset-7 col-md-5">
+      <h3 id="azulclaro">DEZEMBRO</h3>
+      <% @dez.each do |event| %>
+      <strong>
+        <p class="deixarosa"><%= event_dateform (event.event_date) %>-</p>
+        <p class="deixaazul"><%= event.name %></p>
+        <p class="deixarosa">//</p>
+        <div class="deixaazul">
+          <%= form_hora event.time %>
+        </div>
+        <div class="deixarosa">
+          //
+        </div>
+        <div class="deixaazul">
+          <%= event.place %>
+        </div>
+        <p class="deixaazulclaro">
+          (<%= event.more_information %>)
+        </p>
+
+      </strong>
+      <br>
+      <% end %>
+      <br>
+    </div>
+
+
 
   </div>
-
-</div>
 </div>

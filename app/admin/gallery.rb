@@ -7,7 +7,6 @@ ActiveAdmin.register Gallery do
   permit_params :name, :content,:photos, photos_attributes: [:id, :name, :image, :remote_image_url]
 
 
-
   index do
 
     column :name

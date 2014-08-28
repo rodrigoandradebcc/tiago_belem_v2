@@ -41,3 +41,48 @@
 
 
 
+=======
+<br>
+<br>
+	<div class="container">
+		<div class="row">
+			<!-- Boxes de Acoes -->
+			<div class="col-xs-12 col-sm-6 col-lg-6 col-md-6">
+				<div class="box">							
+					<div class="icon">
+						<div class="image"><i class="fa fa-image"></i></div>
+						<div class="info">
+							<h3 class="title" style="color:#ffffff;">Fotos</h3>
+							<p>
+								<%= image_tag "imagens.jpg", class: "image-resposive", height: 250 %>
+							</p>
+							<div style="branco">
+								<%= button_to "Ver Mais", galleries_path, class: "branco btn btn-default",  method: :get %>
+							</div>
+
+						</div>
+					</div>
+					<div class="space"></div>
+				</div> 
+			</div>
+			
+			
+			<div class="col-xs-12 col-sm-6 col-lg-6 col-md-6">
+				<div class="box">							
+					<div class="icon">
+						<div class="image"><i class="fa fa-youtube-play"></i></div>
+						<div class="info">
+							<h3 class="title" style="color:#ffffff;">Vídeos</h3>
+							<p>
+								<%= image_tag "videos.jpg", class: "image-resposive", height: 250 %>
+							</p>
+							<%= button_to "Ver Mais", galleries_path, class: "branco btn btn-default",  method: :get %>
+						</div>
+					</div>
+					<div class="space"></div>
+				</div> 
+			</div>		    
+			<!-- /Boxes de Acoes -->
+		</div>
+	</div>
+>>>>>>> 4cce18bf4000a94c0d0d92f0eb395a8aea80dca5

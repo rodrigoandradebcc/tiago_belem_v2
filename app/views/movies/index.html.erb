@@ -2,13 +2,14 @@
   <div class="row row-centered">
     <h1 class="mudatexto3">Vídeos</h1>
     <br>
-
     <% @movies.each do |movie| %>
     <div class="col-md-6 column" style="max-width:100%;">
+    <div class="vid">
       <div align="center" style="margin-bottom: 1cm;">
         <%= raw movie.link %>
         <br>
       </div>
+    </div>
     </div>
     <% end %>
   </div>

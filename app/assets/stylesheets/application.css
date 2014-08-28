@@ -17,12 +17,7 @@
    font-family: "Lucida Sans Typewriter", "Lucida Console", Monaco, "Bitstream Vera Sans Mono", monospace;
  }
 
- *{
-  padding: 0;
-  margin: 0;
-}
-
-body{
+ body{
   padding-top: 70px; 
   background-size:cover;
 }
@@ -46,7 +41,6 @@ body{
 
 
 .circle-container{
-
  min-width: 768px;
  padding-top: 5%;
  text-align: center;
@@ -59,72 +53,60 @@ body{
 
   @media (min-width: 970px) {
     .iframe{
-      
-       width: 150px;
-      height: 150px;
-    }
-    .circle { 
-      background: #b5dddd ;
-      border-radius: 50%;
-      height: 150px;
-      width: 150px;
-      border: solid #28474e 5px;
-      color: #28474e;
-      letter-spacing: 1px;
-      text-decoration: none;
-      font-weight: 700;
-      text-transform: uppercase;
-      font-size: 1em;
-      -webkit-transition: all 0.2s;
-      transition: all 0.2s;
-    }
-  }
 
-  @media (min-width: 750px) and (max-width: 970px) { 
-    
+     width: 150px;
+     height: 150px;
+   }
    .circle { 
     background: #b5dddd ;
-    border-radius: 25%;
-    height: 50px;
-    width: 50px;
-    border: solid #28474e 1px;
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    border: solid #28474e 5px;
     color: #28474e;
     letter-spacing: 1px;
     text-decoration: none;
     font-weight: 700;
     text-transform: uppercase;
-    font-size: 0.5em;
+    font-size: 1em;
     -webkit-transition: all 0.2s;
     transition: all 0.2s;
   }
-
-
-
-
 }
 
-<<<<<<< HEAD
+@media (min-width: 750px) and (max-width: 970px) { 
 
+ .circle { 
+  background: #b5dddd ;
+  border-radius: 25%;
+  height: 50px;
+  width: 50px;
+  border: solid #28474e 1px;
+  color: #28474e;
+  letter-spacing: 1px;
+  text-decoration: none;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.5em;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
 
+}
 
 
 .circle-responsive:hover {
   border: solid #a80f1a 5px;
 }
-=======
-  .circle-responsive:hover {
-    border: solid #a80f1a 5px;
-  }
->>>>>>> cd5dd9fc7ccb150fb5e2efeb83acb64521e1ee6c
-
+.circle-responsive:hover {
+  border: solid #a80f1a 5px;
+}
 
 .mudatexto {
   color: #ffffff !important;
   text-align: justify;
   font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
 }
-
-
 
 .ficatransparente{
   background-color: transparent !important;
@@ -165,6 +147,12 @@ body{
   font-size: 13px;
   margin-bottom: -10px;
   font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif !important;  
+}
+
+
+#azulclaro{
+  color: #a7cfcf !important;
+  font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif !important; 
 }
 
 .mudatexto2 {
@@ -241,6 +229,13 @@ body{
   -o-column-rule: 1px dotted transparent;
   text-align: justify;
 }
+
+.vid {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px; height: 0; overflow: hidden;
+}
+
 
 .photos {
   border: solid 1px #CCC;
@@ -377,11 +372,7 @@ a {
   display: inline-block;
   margin: 10px 5px 0 5px;
   vertical-align: top;
-<<<<<<< HEAD
-  height: 250px;
-=======
   height: 270px;
->>>>>>> cd5dd9fc7ccb150fb5e2efeb83acb64521e1ee6c
   float: left;
 }
 
@@ -566,3 +557,37 @@ a {
   
 }
 
+/*TESTE*/
+@import "//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css";
+@import "http://fonts.googleapis.com/css?family=Roboto:400,500";
+
+.box > .icon { text-align: center; position: relative; }
+.box > .icon > .image { position: relative; z-index: 2; margin: auto; width: 88px; height: 88px; border: 8px solid white; line-height: 88px; border-radius: 50%; background: #80c8c9; vertical-align: middle; }
+.box > .icon:hover > .image { background: #333; }
+.box > .icon > .image > i { font-size: 36px !important; color: #fff !important; }
+.box > .icon:hover > .image > i { color: white !important; }
+.box > .icon > .info { margin-top: -24px; background: rgba(0, 0, 0, 0.04); border: 1px solid #e0e0e0; padding: 15px 0 10px 0; }
+.box > .icon:hover > .info { background: rgba(0, 0, 0, 0.04); border-color: #e0e0e0; color: white; }
+.box > .icon > .info > h3.title { font-family: "Roboto",sans-serif !important; font-size: 16px; color: #222; font-weight: 500; }
+.box > .icon > .info > p { font-family: "Roboto",sans-serif !important; font-size: 13px; color: #666; line-height: 1.5em; margin: 20px;}
+.box > .icon:hover > .info > h3.title, .box > .icon:hover > .info > p, .box > .icon:hover > .info > .more > a { color: #222; }
+.box > .icon > .info > .more a { font-family: "Roboto",sans-serif !important; font-size: 12px; color: #222; line-height: 12px; text-transform: uppercase; text-decoration: none; }
+.box > .icon:hover > .info > .more > a { color: #fff; padding: 6px 8px; background-color: #80c8c9; }
+.box .space { height: 30px; }
+
+.textarea {
+  width: 100%;
+  border-top: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+
+.largura{
+  width: 100%;
+}
+
+.branco{
+  background-color: #80c8c9 !important;
+  border-color: #80c8c9 !important;
+}

@@ -13,14 +13,20 @@
  *= require fancybox
  *= require_tree .
  */
- html{
-   font-family: "Lucida Sans Typewriter", "Lucida Console", Monaco, "Bitstream Vera Sans Mono", monospace;
- }
+
 
  body{
   padding-top: 70px; 
-  background-size:cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color:#fff;
+  height: 60%;
+  background-color:#333;
+  font-family: 'Open Sans',Arial,Helvetica,Sans-Serif !important;
 }
+
 .container-navbar { 
 	padding-left: 10%;
 	width: 100%;

@@ -41,7 +41,7 @@ class ImageUploader < CarrierWave::Uploader::Base
 
   version :thumb do
 
-   process :resize_to_fill => [50, 50]
+   process :resize_to_fill => [250, 250]
 
  end
 

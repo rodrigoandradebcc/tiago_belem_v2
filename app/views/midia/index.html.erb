@@ -1,47 +1,4 @@
 
-<div class="container">
-	<div class="row clearfix">
-		<div class="col-md-6 column">
-			<div class="row clearfix">
-				<div class="col-md-6 column">
-					
-					
-				<%= button_to "Photos", galleries_path, class: "circle", method: :get %>
-				
-					
-				</div>
-				<div class="col-md-6 column">
-				<% @galleries.each do |gallery| %>
-       			<%= link_to ((image_tag (gallery.photos.first.image_url(:thumb) ))), galleries_path, alt: "50x50" %>
-            <% end %>
-				</div>
-			</div>
-		</div>
-		<div class="col-md-6 column">
-			<div class="row clearfix">
-				<div class="col-md-6 column">
-						
-				</div>
-				<div class="col-md-6 column">
-				 <%= button_to "VIDEOS", movies_path, class: "circle",  method: :get
-				%>
-
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-		
-
-
-
-
-
-
-
-
-
-=======
 <br>
 <br>
 	<div class="container">
@@ -57,7 +14,7 @@
 								<%= image_tag "imagens.jpg", class: "image-resposive", height: 250 %>
 							</p>
 							<div style="branco">
-								<%= button_to "Ver Mais", galleries_path, class: "branco btn btn-default",  method: :get %>
+								<%= link_to "Ver Mais", galleries_path, class: "branco btn btn-default glyphicon glyphicon-picture",  method: :get %>
 							</div>
 
 						</div>
@@ -76,7 +33,7 @@
 							<p>
 								<%= image_tag "videos.jpg", class: "image-resposive", height: 250 %>
 							</p>
-							<%= button_to "Ver Mais", galleries_path, class: "branco btn btn-default",  method: :get %>
+							<%= link_to "Ver Mais", movies_path, class: "branco btn btn-default glyphicon glyphicon-facetime-video",  method: :get %>
 						</div>
 					</div>
 					<div class="space"></div>
@@ -85,4 +42,3 @@
 			<!-- /Boxes de Acoes -->
 		</div>
 	</div>
->>>>>>> 4cce18bf4000a94c0d0d92f0eb395a8aea80dca5

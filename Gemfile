@@ -33,7 +33,8 @@ group :doc do
 end
 
 gem 'activeadmin', github: 'gregbell/active_admin'
-
+gem "auto_html"
+gem 'blueimp-gallery'
 gem 'redcarpet'
 gem 'kaminari'
 gem 'fancybox2-rails'

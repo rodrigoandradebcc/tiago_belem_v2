@@ -45,10 +45,15 @@ GEM
     arbre (1.0.1)
       activesupport (>= 3.0.0)
     arel (4.0.2)
+    auto_html (1.6.4)
+      redcarpet (~> 3.1)
+      rinku (~> 1.5.0)
     bcrypt (3.1.7)
     better_errors (1.1.0)
       coderay (>= 1.0.0)
       erubis (>= 2.6.6)
+    blueimp-gallery (2.11.0.1)
+      railties (>= 3.1.0)
     bootstrap-sass (3.2.0.1)
       sass (~> 3.2)
     bourbon (3.2.3)
@@ -145,6 +150,7 @@ GEM
     redcarpet (3.1.2)
     responders (1.0.0)
       railties (>= 3.2, < 5)
+    rinku (1.5.1)
     rmagick (2.13.3)
     sass (3.2.19)
     sass-rails (4.0.3)
@@ -187,7 +193,9 @@ PLATFORMS
 
 DEPENDENCIES
   activeadmin!
+  auto_html
   better_errors
+  blueimp-gallery
   bootstrap-sass
   carrierwave
   coffee-rails (~> 4.0.0)

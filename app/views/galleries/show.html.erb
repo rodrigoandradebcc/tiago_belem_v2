@@ -9,16 +9,16 @@
   <div class="main">        
  <ul id="og-grid" class="og-grid">
 
-  <% @gallery.photos.each do |photo| %>
     <div id="blueimp-gallery" class="blueimp-gallery">
       <div class="slides"></div>
-      <h3 class="title"><%= photo.name %></h3>
+      <h3 class="title"><%= @gallery.photos.name %></h3>
       <a class="prev">‹</a>
       <a class="next">›</a>
       <a class="close">×</a>
       <a class="play-pause"></a>
       <ol class="indicator"></ol>
     </div>
+  <% @gallery.photos.each do |photo| %>
     <div id="links">
 
 

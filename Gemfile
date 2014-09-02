@@ -35,17 +35,13 @@ end
 gem 'activeadmin', github: 'gregbell/active_admin'
 gem "auto_html"
 gem 'blueimp-gallery'
-gem 'redcarpet'
-gem 'kaminari'
-gem 'fancybox2-rails'
-gem 'rails-gallery'
-gem "rmagick"
+gem "rmagick", "~> 2.13.1"
 gem "carrierwave"
 gem 'simple_form'
 gem 'bootstrap-sass'
 gem 'devise'
+gem 'kaminari'
 gem 'better_errors'
-gem 'cancancan', '~> 1.9'
 gem 'font-awesome-sass'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'

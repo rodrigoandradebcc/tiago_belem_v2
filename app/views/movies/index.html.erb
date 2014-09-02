@@ -4,17 +4,17 @@
     <br>
     <% @movies.each do |movie| %>
     <div class="col-md-6 column" style="max-width:100%;">
-  
- 
- <%=movie.link_html %>
- 
 
-        <br>
-        
-      </div>
 
-    <% end %>
-  </div>
+    <div class="flex-video2">
+      <%= movie.link_html %>
+    </div>
+     
+
+     <br>
+   </div>
+   <% end %>
+ </div>
 </div>
 <script>
   document.getElementById('links').onclick = function (event) {

@@ -45,7 +45,7 @@ gem 'simple_form'
 gem 'bootstrap-sass'
 gem 'devise'
 gem 'better_errors'
-
+gem 'cancancan', '~> 1.9'
 gem 'font-awesome-sass'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'

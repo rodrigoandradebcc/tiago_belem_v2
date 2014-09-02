@@ -1,4 +1,5 @@
 class GalleriesController < ApplicationController
+  
   before_action :set_gallery, only: [:show]
 
   # GET /galleries

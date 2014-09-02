@@ -1,13 +1,13 @@
 <div class="container" >
   <p id="notice"><%= notice %></p>
- <%= link_to 'Back', galleries_path, class: "branco btn btn-primary glyphicon glyphicon-arrow-left"  %>
+  <%= link_to ' Voltar', galleries_path, class: "branco btn btn-primary glyphicon glyphicon-arrow-left"  %>
   <header class="clearfix">
 
     <h1><%= @gallery.name %></h1> 
     
   </header>
   <div class="main">        
- <ul id="og-grid" class="og-grid">
+   <ul id="og-grid" class="og-grid">
 
     <div id="blueimp-gallery" class="blueimp-gallery">
       <div class="slides"></div>
@@ -18,26 +18,26 @@
       <a class="play-pause"></a>
       <ol class="indicator"></ol>
     </div>
-  <% @gallery.photos.each do |photo| %>
+    <% @gallery.photos.each do |photo| %>
     <div id="links">
 
 
- <li>
+     <li>
       <%= link_to (image_tag (photo.image_url(:thumb).to_s )), photo.image_url %>
 
-</li>
-      <% end %>
-       </ul>
-    </div>
+    </li>
+    <% end %>
+  </ul>
+</div>
 
-  </div>
+</div>
 
 
 
 
 </div>
 
- 
+
 
 <script>
   document.getElementById('links').onclick = function (event) {

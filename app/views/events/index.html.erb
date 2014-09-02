@@ -1,7 +1,9 @@
 <div class="container">
   <div class="row">
     <div class="col-md-offset-7 col-md-5">
+      <% unless @jan.empty? %>
       <h3 id="azulclaro">JANEIRO</h3>
+      
       <% @jan.each do |event| %>
       <strong>
         <p class="deixarosa"><%= event_dateform (event.event_date) %>-</p>
@@ -21,12 +23,12 @@
         </p>
 
       </strong>
-      <br>
       <% end %>
-      <br>
+      <% end %>
     </div>
 
     <div class="col-md-offset-7 col-md-5">
+      <% unless @fev.empty? %>
       <h3 id="azulclaro">FEVEREIRO</h3>
       <% @fev.each do |event| %>
       <strong>
@@ -49,10 +51,11 @@
       </strong>
       <br>
       <% end %>
-      <br>
+      <% end %>
     </div>
 
     <div class="col-md-offset-7 col-md-5">
+      <% unless @mar.empty? %>
       <h3 id="azulclaro">MARÇO</h3>
       <% @mar.each do |event| %>
       <strong>
@@ -75,10 +78,11 @@
       </strong>
       <br>
       <% end %>
-      <br>
+      <% end %>
     </div>
 
     <div class="col-md-offset-7 col-md-5">
+      <% unless @abr.empty? %>
       <h3 id="azulclaro">ABRIL</h3>
       <% @abr.each do |event| %>
       <strong>
@@ -101,10 +105,11 @@
       </strong>
       <br>
       <% end %>
-      <br>
+      <% end %>
     </div>
 
     <div class="col-md-offset-7 col-md-5">
+      <% unless @mai.empty? %>
       <h3 id="azulclaro">MAIO</h3>
       <% @mai.each do |event| %>
       <strong>
@@ -127,10 +132,12 @@
       </strong>
       <br>
       <% end %>
+      <% end %>
       <br>
     </div>
 
     <div class="col-md-offset-7 col-md-5">
+      <% unless @jun.empty? %>
       <h3 id="azulclaro">JUNHO</h3>
       <% @jun.each do |event| %>
       <strong>
@@ -153,10 +160,12 @@
       </strong>
       <br>
       <% end %>
-      <br>
+      <% end %>
+      
     </div>
 
     <div class="col-md-offset-7 col-md-5">
+      <% unless @jul.empty? %>
       <h3 id="azulclaro">JULHO</h3>
       <% @jul.each do |event| %>
       <strong>
@@ -179,10 +188,11 @@
       </strong>
       <br>
       <% end %>
-      <br>
+      <% end %>
     </div>
 
     <div class="col-md-offset-7 col-md-5">
+      <% unless @ago.empty? %>
       <h3 id="azulclaro">AGOSTO</h3>
       <% @ago.each do |event| %>
       <strong>
@@ -205,10 +215,11 @@
       </strong>
       <br>
       <% end %>
-      <br>
+      <% end %>
     </div>
 
     <div class="col-md-offset-7 col-md-5">
+      <% unless @ago.empty? %>
       <h3 id="azulclaro">SETEMBRO</h3>
       <% @set.each do |event| %>
       <strong>
@@ -231,10 +242,11 @@
       </strong>
       <br>
       <% end %>
-      <br>
+      <% end %>
     </div>
 
     <div class="col-md-offset-7 col-md-5">
+      <% unless @ago.empty? %>
       <h3 id="azulclaro">OUTUBRO</h3>
       <% @out.each do |event| %>
       <strong>
@@ -253,14 +265,15 @@
         <p class="deixaazulclaro">
           (<%= event.more_information %>)
         </p>
-
       </strong>
       <br>
       <% end %>
-      <br>
+      <% end %>
+      
     </div>
 
     <div class="col-md-offset-7 col-md-5">
+      <% unless @nov.empty? %>
       <h3 id="azulclaro">NOVEMBRO</h3>
       <% @nov.each do |event| %>
       <strong>
@@ -279,14 +292,14 @@
         <p class="deixaazulclaro">
           (<%= event.more_information %>)
         </p>
-
       </strong>
       <br>
       <% end %>
-      <br>
+      <% end %>
     </div>
 
     <div class="col-md-offset-7 col-md-5">
+      <% unless @dez.empty? %>
       <h3 id="azulclaro">DEZEMBRO</h3>
       <% @dez.each do |event| %>
       <strong>
@@ -305,11 +318,10 @@
         <p class="deixaazulclaro">
           (<%= event.more_information %>)
         </p>
-
       </strong>
       <br>
       <% end %>
-      <br>
+      <% end %>
     </div>
 
 

@@ -4,6 +4,16 @@ TiagoBelemV2::Application.configure do
   # Code is not reloaded between requests.
   config.cache_classes = true
 
+  onfig.action_mailer.smtp_settings = {
+    address:"smtp.gmail.com",
+    port:587,
+    domain:"gmail.com",
+    authentication: "plain",
+    user_name:"tiagobelemsite@gmail.com",
+    password:"tiagobelempara",
+    enable_starttls_auto: true
+  }
+
   # Eager load code on boot. This eager loads most of Rails and
   # your application in memory, allowing both thread web servers
   # and those relying on copy on write to perform better.

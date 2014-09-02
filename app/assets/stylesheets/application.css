@@ -14,9 +14,7 @@
  *= require blueimp-gallery-all
  *= require_tree .
  */
-
-
- body{
+body{
   padding-top: 70px; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -117,6 +115,7 @@
 
 .ficatransparente{
   background-color: transparent !important;
+  color: #FFFFFF;
 }
 
 
@@ -135,6 +134,10 @@
   font-size: 18px;
   margin-bottom: -5px;
   font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif !important;
+}
+
+.deixabranco {
+  color: #ffffff !important;
 }
 
 .deixaazul {
@@ -165,12 +168,6 @@
 .mudatexto2 {
   color: rgb(181,222,222) !important;
   text-align: justify;
-  font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif !important;
-}
-
-.mudatexto3 {
-  text-align: center;
-  color: #FFFFFF !important;
   font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif !important;
 }
 
@@ -598,3 +595,19 @@ a {
   background-color: #80c8c9 !important;
   border-color: #80c8c9 !important;
 }
+
+::-webkit-input-placeholder {
+   color: white;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: white;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: white;  
+}
+
+:-ms-input-placeholder {  
+   color: white;  
+} 

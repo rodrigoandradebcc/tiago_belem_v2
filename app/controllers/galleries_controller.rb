@@ -14,13 +14,10 @@ class GalleriesController < ApplicationController
   end
 
   # GET /galleries/new
-  def new
-    @gallery = Gallery.new
-  end
+
 
   # GET /galleries/1/edit
-  def edit
-  end
+
 
   # POST /galleries
   # POST /galleries.json

@@ -4,7 +4,7 @@ TiagoBelemV2::Application.configure do
   # Code is not reloaded between requests.
   config.cache_classes = true
 
-  onfig.action_mailer.smtp_settings = {
+  config.action_mailer.smtp_settings = {
     address:"smtp.gmail.com",
     port:587,
     domain:"gmail.com",

@@ -5,12 +5,12 @@ TiagoBelemV2::Application.configure do
   config.cache_classes = true
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
-    address:"smtp.gmail.com",
-    port:587,
-    domain:"gmail.com",
+    address:"smtp.sendgrid.net",
+    port: 587,
+    domain:"heroku.com",
     authentication: "plain",
-    user_name:"tiagobelemsite@gmail.com",
-    password:"tiagobelempara",
+    user_name: ENV['SENDGRID_USERNAME'],
+    password: ENV['SENDGRID_PASSWORD'],
     enable_starttls_auto: true
   }
   config.action_mailer.raise_delivery_errors = true

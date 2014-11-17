@@ -46,6 +46,8 @@ gem 'font-awesome-sass'
 gem 'rails_12factor', group: :production
 gem 'yaml_db'
 gem 'carrierwave-dropbox'
+gem 'start'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
 

@@ -13,8 +13,8 @@ development:
   encoding: unicode
   database: tiago_belem_v2_development
   pool: 5
-  username: postgres
-  password: postgres
+  username: fabsoft
+  password: fabsoft
   host: localhost
 
 
@@ -26,8 +26,8 @@ test:
   encoding: unicode
   database: tiago_belem_v2_test
   pool: 5
-  username: postgres
-  password: postgres
+  username: fabsoft
+  password: fabsoft
   host: localhost
 
 
@@ -36,6 +36,6 @@ production:
   encoding: unicode
   database: tiago_belem_v2_production
   pool: 5
-  username: postgres
-  password: postgres
+  username: fabsoft
+  password: fabsoft
   host: localhost

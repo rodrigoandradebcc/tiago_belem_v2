@@ -89,6 +89,12 @@ TiagoBelemV2::Application.configure do
   # Use default logging formatter so that PID and timestamp are not suppressed.
   config.log_formatter = ::Logger::Formatter.new
 
+  ENV["APP_KEY"] = "yxzn09sfps6qvr0"
+  ENV["APP_SECRET"] = "c9c0w8mvlgrjbnd"
+  ENV["ACCESS_TOKEN"] = "tme6nbegm2w3702b"
+  ENV["ACCESS_TOKEN_SECRET"] = "eedf1wq3b3jh0gq"
+  ENV["USER_ID"] = "118454663"
+
 
 config.assets.compile = true
 end

@@ -39,4 +39,11 @@ TiagoBelemV2::Application.configure do
   # This option may cause significant delays in view rendering with a large
   # number of complex assets.
   config.assets.debug = true
+
+  ENV["APP_KEY"] = "yxzn09sfps6qvr0"
+  ENV["APP_SECRET"] = "c9c0w8mvlgrjbnd"
+  ENV["ACCESS_TOKEN"] = "b2p9rwojp656l3s6"
+  ENV["ACCESS_TOKEN_SECRET"] = "8livk1vtvwgu7sg"
+  ENV["USER_ID"] = "118454663"
+
 end

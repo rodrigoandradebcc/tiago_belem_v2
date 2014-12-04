@@ -40,10 +40,10 @@ TiagoBelemV2::Application.configure do
   # number of complex assets.
   config.assets.debug = true
 
-  ENV["APP_KEY"] = "yxzn09sfps6qvr0"
-  ENV["APP_SECRET"] = "c9c0w8mvlgrjbnd"
-  ENV["ACCESS_TOKEN"] = "b2p9rwojp656l3s6"
-  ENV["ACCESS_TOKEN_SECRET"] = "8livk1vtvwgu7sg"
+  ENV["APP_KEY"] = "g15pf2o0fe9l4m2"
+  ENV["APP_SECRET"] = "r3zgzxxy2779d0o"
+  ENV["ACCESS_TOKEN"] = "u76jn5v0l79mxjnm"
+  ENV["ACCESS_TOKEN_SECRET"] = "3qvixxhnuvmxrzt"
   ENV["USER_ID"] = "118454663"
 
 end

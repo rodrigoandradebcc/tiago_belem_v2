@@ -13,7 +13,8 @@ class ImageUploader < CarrierWave::Uploader::Base
     %w(jpg jpeg gif png)
   end
 
- 
+
+
   # Override the directory where uploaded files will be stored.
   # This is a sensible default for uploaders that are meant to be mounted:
  #  def store_dir
@@ -37,11 +38,11 @@ class ImageUploader < CarrierWave::Uploader::Base
   # end
 
   # Create different versions of your uploaded files:
-  process :resize_to_fit => [800, 800]
+  # process :resize_to_fit => [800, 800]
 
   version :thumb do
 
-   process :resize_to_fill => [250, 250]
+    process :resize_to_limit => [300, 300]
 
  end
 

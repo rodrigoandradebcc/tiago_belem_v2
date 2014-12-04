@@ -1,11 +1,10 @@
 <div class="container">
 	<div class="row row-centered">
-		
 		<% @endorsees.each do |endorsee| %>
 		<div class="col-md-4 column" style="max-width:100%;">
 			<div align="center" style="margin-bottom: 1cm;">
 				<a href="<%= endorsee.link %>">
-					<%= image_tag endorsee.image_url(:thumb).to_s , {class: "img-responsive", style: "height: 300px;" } %>
+					<%= image_tag endorsee.image_url(:thumb).to_s , {class: "img-responsive" } %>
 				</a>
 				<br>
 			</div>

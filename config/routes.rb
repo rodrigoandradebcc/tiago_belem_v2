@@ -1,4 +1,6 @@
 TiagoBelemV2::Application.routes.draw do
+  get "endorsees/home"
+  get "bios/home"
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
   resources :galleries
@@ -18,10 +20,6 @@ TiagoBelemV2::Application.routes.draw do
   get "welcome/index"
   
   resources :movies
-
-  resources :endorsees
-
-  resources :bios
 
   root 'welcome#index'
 

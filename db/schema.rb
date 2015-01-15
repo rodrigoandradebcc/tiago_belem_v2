@@ -57,13 +57,6 @@ ActiveRecord::Schema.define(version: 20140818222134) do
     t.datetime "updated_at"
   end
 
-  create_table "endorsees", force: true do |t|
-    t.string   "link"
-    t.string   "image"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
   create_table "events", force: true do |t|
     t.date     "event_date"
     t.datetime "time"

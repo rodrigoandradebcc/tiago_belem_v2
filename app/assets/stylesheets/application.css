@@ -14,7 +14,7 @@
  *= require_tree .
  */
 body{
-  padding-top: 70px; 
+  padding-top: 22px; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -179,7 +179,7 @@ body{
 }
 
 .backbio{
-  background: url('bio.jpg') no-repeat center center fixed;
+  background: url('bio.png') no-repeat center center fixed;
   background-size:cover;
 }
 

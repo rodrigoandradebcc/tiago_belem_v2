@@ -3643,7 +3643,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar {
   position: relative;
   min-height: 60px;
-  margin-bottom: 21px;
+  margin-bottom: 15px;
   margin-right: 28px;
   background:transparent !important;
   color: rgb(181,222,222) !important;
@@ -5792,6 +5792,7 @@ button.close {
   font-size: 18px;
   font-family: "News Cycle", "Arial Narrow Bold", sans-serif;
   font-weight: 700;
+  padding-bottom: -40% !important;
 }
 .navbar-default .badge {
   background-color: #000;
@@ -5965,4 +5966,18 @@ and (min-device-width : 768px)
 and (max-device-width : 1024px) 
 and (orientation : landscape) {
   /* Styles */
+}
+
+/* BOTAO CIRCULAR */
+.btn-circle.btn-xl {
+  width: 140px;
+  height: 140px;
+  padding: 50px 20px;
+  font-size: 25px;
+  line-height: 1.33;
+  border-radius: 100px;
+}
+/*--------------------*/
+.navbar-left{
+  padding-top: 10px;
 }

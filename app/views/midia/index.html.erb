@@ -1,51 +1,8 @@
-<br>
-<br>
-<div class="container">
-	<div class="row"><div class="col-md-12">
-		<br><br>
+<div class="row">
+	<div class="col-md-10" id="poscirc1">
+			<%= link_to "FOTOS", galleries_path, class: "corbotoescirc btn btn-default btn-circle btn-xl",  method: :get %>
 	</div>
-	<!-- Boxes de Acoes -->
-	<div class="col-xs-12 col-sm-6 col-lg-6 col-md-6">
-		
-		<div class="box">							
-			<div class="icon">
-				<div class="image"><i class="glyphicon glyphicon-picture"></i></div>
-				<div class="info">
-					<h3 class="title" style="color:#ffffff;"><strong>Fotos</strong></h3>
-					<p>
-						<a href="<% galleries_path %>"><%= image_tag "tiagonova.jpg", class: "image-resposive", height: "100%", width: "100%" %></a>
-					</p>
-					<%= link_to " Ver Mais", galleries_path, class: "branco btn btn-default glyphicon glyphicon-picture",  method: :get %>
-
-
-				</div>
-			</div>
-			<div class="space"></div>
-		</div> 
+	<div class="col-md-2" id="poscirc2">
+			<%= link_to "VÍDEOS", movies_path, class: "corbotoescirc btn btn-default btn-circle btn-xl",  method: :get %>
 	</div>
-
-
-	<div class="col-xs-12 col-sm-6 col-lg-6 col-md-6">
-		<div class="box">							
-			<div class="icon">
-				<div class="image"><i class="glyphicon glyphicon-facetime-video"></i></div>
-				<div class="info">
-					<h3 class="title" style="color:#ffffff;"><strong>Vídeos</strong></h3>
-					<!-- <p>
-						<div class="flex-video widescreen" style="margin: 0 auto;text-align:center;">
-							<iframe allowfullscreen="" src="http://www.youtube.com/embed/wjExFEyeUCs?list=UUXZCOggZXj55G-fzXc-OHtQ" frameborder="0"></iframe>
-						</div>
-					</p> -->
-					<p>
-						<a href="<% movies_path %>"><%= image_tag "tiagonova2.jpg", class: "image-resposive", height: "100%", width: "100%" %></a>
-					</p>
-
-					<%= link_to " Ver Mais", movies_path, class: "branco btn btn-default glyphicon glyphicon-facetime-video",  method: :get %>
-				</div>
-			</div>
-			<div class="space"></div>
-		</div> 
-	</div>		    
-	<!-- /Boxes de Acoes -->
-</div>
 </div>

@@ -8,27 +8,28 @@
 
 	<%= stylesheet_link_tag    "application", media: "all" %>
 
-	<%= javascript_include_tag 'application' %>
 	
 	<%= csrf_meta_tags %>
 
+	<%= javascript_include_tag 'application' %>
 
 </head>
 
 
 <body class="<%= ('backhome' if params[:controller] == 'welcome') || ('backbio' if params[:controller] == 'bios') || ('backcont' if params[:controller] == 'contacts') || ('backmusica' if params[:controller] == 'musics') || ('backmidia' if params[:controller] == 'midia') || ('backmidia' if params[:controller] == 'galleries') || ('backagenda' if params[:controller] == 'events') || ('backmidia' if params[:controller] == 'photos') || ('backend' if params[:controller] == 'endorsees') || ('backmidia' if params[:controller] == 'movies')%>">
 
-
-
-	
 	<div class="container-navbar">
-		<a id="iconeesp" href="https://www.facebook.com/TiagoBelemOficial"><%= image_tag("facebook.png") %></a>
-		<a id="iconeesp" href="https://www.facebook.com/TiagoBelemOficial"><%= image_tag("Instagran.png") %></a>
-		<a href="https://www.facebook.com/TiagoBelemOficial"><%= image_tag("SoundCloud.png") %></a>
+		
+		<!-- NAVBAR ESQUERDA -->
+		<nav class="navbar navbar-left">
+			<a id="iconeesp" href="https://www.facebook.com/TiagoBelemOficial"><%= image_tag("facebook.png") %></a>
+			<a id="iconeesp" href="https://www.facebook.com/TiagoBelemOficial"><%= image_tag("Instagran.png") %></a>
+			<a href="https://www.facebook.com/TiagoBelemOficial"><%= image_tag("SoundCloud.png") %></a>
+		</nav>
+		<!-- __________________________________________________ -->
 
+		<!-- NAVBAR DIREITA -->
 		<nav class="navbar navbar-right " role="navigation">
-
-			
 			<ul class="nav navbar-nav">
 				<li class="<%= 'active' if params[:controller] == 'welcome' %>" ><a href="/">HOME</a></li>
 				<li class="<%= 'active' if params[:controller] == 'bios' %>"><a href="/bios/home">BIO</a></li>
@@ -38,25 +39,13 @@
 				<li><a href="/midia">MÍDIA</a></li>
 				<li class="<%= 'active' if params[:controller] == 'contacts' %>"><a href="/contacts/new">CONTATO</a></li>
 			</ul>
-			
 		</nav>
+		<!-- __________________________________________________ -->
 
 	</div>
 	
-	
-	<div class="content">
-		<br>
-		<br>
-		<br>
+	<div>
 		<%= yield %>
 	</div>
-	
-
-</div>
-
-
-
-
-
 </body>
 </html>
